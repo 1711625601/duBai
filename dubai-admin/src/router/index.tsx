@@ -1,4 +1,4 @@
-import RouterViewContext from "./components/StaticWrapper";
+import RouteRenderer from "./components/RouteRenderer";
 
 import {
   BrowserRouter as Router,
@@ -7,7 +7,7 @@ import {
 export const RouterView = () => {
   return (
     <Router>
-      <RouterViewContext />
+      <RouteRenderer />
     </Router>
   );
 };

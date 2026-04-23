@@ -1,5 +1,6 @@
-import "@/styles/Frame584300.scss";
-const Frame584300 = () => {
+import "@/styles/home-page.scss";
+
+const HomePage = () => {
     return (
         <div className="scroll-container">
             <div id="584_300" className="dubai-frame-584_300">
@@ -854,4 +855,4 @@ const Frame584300 = () => {
         </div>
     );
 };
-export default Frame584300;
+export default HomePage;

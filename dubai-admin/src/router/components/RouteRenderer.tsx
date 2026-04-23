@@ -1,8 +1,7 @@
 import { Route, Routes, useLocation } from "react-router";
 import { routes } from "../routes";
 
-
-const RouterView = () => {
+const RouteRenderer = () => {
   const location = useLocation();
   
   return (
@@ -18,4 +17,4 @@ const RouterView = () => {
   );
 };
 
-export default RouterView;
+export default RouteRenderer;

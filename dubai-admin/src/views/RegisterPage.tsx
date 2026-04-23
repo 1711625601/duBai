@@ -1,5 +1,6 @@
-import "@/styles/Frame9884.scss";
-const Frame9884 = () => {
+import "@/styles/register-page.scss";
+
+const RegisterPage = () => {
     return (
         <div className="scroll-container">
             <div id="988_4" className="dubai-frame-988_4">
@@ -454,4 +455,4 @@ const Frame9884 = () => {
         </div>
     );
 };
-export default Frame9884;
+export default RegisterPage;

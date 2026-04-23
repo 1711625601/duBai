@@ -1,5 +1,6 @@
-import "@/styles/Frame8482.scss";
-const Frame8482 = () => {
+import "@/styles/defi-page.scss";
+
+const DefiPage = () => {
     return (
         <div className="scroll-container">
             <div id="848_2" className="dubai-frame-848_2">
@@ -521,4 +522,4 @@ const Frame8482 = () => {
         </div>
     );
 };
-export default Frame8482;
+export default DefiPage;

@@ -1,5 +1,6 @@
-import "@/styles/Frame10503981.scss";
-const Frame10503981 = () => {
+import "@/styles/lending-page.scss";
+
+const LendingPage = () => {
     return (
         <div className="scroll-container">
             <div id="1050_3981" className="dubai-frame-1050_3981">
@@ -1322,4 +1323,4 @@ const Frame10503981 = () => {
         </div>
     );
 };
-export default Frame10503981;
+export default LendingPage;
