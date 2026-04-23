@@ -1,1434 +1,1433 @@
-
 .scroll-container {
-        height: 100%;
-width: 100%;
-overflow: auto;
-      }
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
 .dubai-frame-988_4 {
-        width: 100%;
-height: 1080px;
-overflow: hidden;
-position: relative;
-flex-shrink: 0;
-background-color: rgba(4, 4, 4, 1);
-      }
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    background-color: rgba(4, 4, 4, 1);
+}
 .dubai-group-988_5 {
-        width: 1920px;
-height: 958.0001220703125px;
-position: absolute;
-left: 0px;
-top: 80px;
-      }
+    width: 1920px;
+    height: 958.0001220703125px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+}
 .dubai-rectangle-988_6 {
-        width: 958.0000610351562px;
-height: 1920px;
-position: absolute;
-left: 480.99999042017737px;
-top: -480.9999275194894px;
-transform:  rotate(90.00000250447808deg);
-background-size: 112.7349% 112.5000%;
-background-position: -13.00px -53.00px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-hero-coin-background.png);
-opacity: 0.05999999865889549;
-      }
+    width: 958.0000610351562px;
+    height: 1920px;
+    position: absolute;
+    left: 480.99999042017737px;
+    top: -480.9999275194894px;
+    transform: rotate(90.00000250447808deg);
+    background-size: 112.7349% 112.5%;
+    background-position: -13px -53px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-hero-coin-background.png);
+    opacity: 0.05999999865889549;
+}
 .dubai-group-988_7 {
-        width: 1440px;
-height: 664px;
-position: absolute;
-left: 240.0000457763672px;
-top: 179.99996948242188px;
-      }
+    width: 1440px;
+    height: 664px;
+    position: absolute;
+    left: 240.0000457763672px;
+    top: 179.99996948242188px;
+}
 .dubai-group-988_8 {
-        width: 740px;
-height: 664px;
-position: absolute;
-left: 700px;
-top: 0px;
-      }
+    width: 740px;
+    height: 664px;
+    position: absolute;
+    left: 700px;
+    top: 0px;
+}
 .dubai-rectangle-988_9 {
-        width: 100%;
-height: 100%;
-position: relative;
-border-radius: 20px 20px 20px 20px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(4, 4, 4, 0.10000000149011612);
-      }
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(4, 4, 4, 0.10000000149011612);
+}
 .stroke-wrapper-988_9 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 740px;
-height: 544px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 740px;
+    height: 544px;
+}
 .stroke-988_9 {
-        position: absolute;
-inset: 0px;
-border-radius: 20px 20px 20px 20px;
-pointer-events: none;
-border-width: 1px 1px 1px 1px;
-border-style: solid;
-box-sizing: border-box;
-border-color: rgba(255, 255, 255, 0.20000000298023224);
-      }
+    position: absolute;
+    inset: 0px;
+    border-radius: 20px 20px 20px 20px;
+    pointer-events: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.20000000298023224);
+}
 .dubai-group-988_10 {
-        width: 680px;
-height: 184px;
-position: absolute;
-left: 30px;
-top: 40px;
-      }
+    width: 680px;
+    height: 184px;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
 .dubai-paragraph-988_11 {
-        font-size: 24px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
-      }
+    font-size: 24px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
+}
 .dubai-group-988_12 {
-        width: 680px;
-height: 140px;
-position: absolute;
-left: 0px;
-top: 44px;
-      }
+    width: 680px;
+    height: 140px;
+    position: absolute;
+    left: 0px;
+    top: 44px;
+}
 .dubai-rectangle-988_13 {
-        width: 100%;
-height: 100%;
-position: relative;
-border-radius: 10px 10px 10px 10px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(4, 4, 4, 0.10000000149011612);
-      }
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(4, 4, 4, 0.10000000149011612);
+}
 .stroke-wrapper-988_13 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 680px;
-height: 140px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 680px;
+    height: 140px;
+}
 .stroke-988_13 {
-        position: absolute;
-inset: 0px;
-border-radius: 10px 10px 10px 10px;
-pointer-events: none;
-border-width: 1px 1px 1px 1px;
-border-style: solid;
-box-sizing: border-box;
-border-color: rgba(255, 255, 255, 0.20000000298023224);
-      }
+    position: absolute;
+    inset: 0px;
+    border-radius: 10px 10px 10px 10px;
+    pointer-events: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.20000000298023224);
+}
 .dubai-group-988_14 {
-        width: 126px;
-height: 104px;
-position: absolute;
-left: 530px;
-top: 18px;
-      }
+    width: 126px;
+    height: 104px;
+    position: absolute;
+    left: 530px;
+    top: 18px;
+}
 .dubai-paragraph-988_15 {
-        font-size: 60px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 60px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-paragraph-988_16 {
-        font-size: 18px;
-font-family: "Alibaba PuHuiTi 3.0-65 Medium";
-font-weight: 500;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: absolute;
-left: 59px;
-top: 79px;
-white-space: pre;
-flex-grow: 0;
-opacity: 0.800000011920929;
-      }
+    font-size: 18px;
+    font-family: 'Alibaba PuHuiTi 3.0-65 Medium';
+    font-weight: 500;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 59px;
+    top: 79px;
+    white-space: pre;
+    flex-grow: 0;
+    opacity: 0.800000011920929;
+}
 .dubai-group-988_17 {
-        width: 164px;
-height: 70px;
-position: absolute;
-left: 24px;
-top: 35px;
-      }
+    width: 164px;
+    height: 70px;
+    position: absolute;
+    left: 24px;
+    top: 35px;
+}
 .dubai-group-988_18 {
-        width: 92px;
-height: 70px;
-position: absolute;
-left: 72px;
-top: 0px;
-      }
+    width: 92px;
+    height: 70px;
+    position: absolute;
+    left: 72px;
+    top: 0px;
+}
 .dubai-group-988_19 {
-        width: 80px;
-height: 39px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 80px;
+    height: 39px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-paragraph-988_20 {
-        font-size: 28px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 28px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_21 {
-        width: 20px;
-height: 20px;
-background-image: url(@/assets/images/register-wallet-balance-copy-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 60px;
-top: 9px;
-      }
+    width: 20px;
+    height: 20px;
+    background-image: url(@/assets/images/register-wallet-balance-copy-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 60px;
+    top: 9px;
+}
 .dubai-paragraph-988_23 {
-        font-size: 18px;
-font-family: "Alibaba PuHuiTi 3.0-65 Medium";
-font-weight: 500;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 45px;
-white-space: pre;
-flex-grow: 0;
-opacity: 0.800000011920929;
-      }
+    font-size: 18px;
+    font-family: 'Alibaba PuHuiTi 3.0-65 Medium';
+    font-weight: 500;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    white-space: pre;
+    flex-grow: 0;
+    opacity: 0.800000011920929;
+}
 .dubai-group-988_24 {
-        width: 60px;
-height: 60px;
-position: absolute;
-left: 0px;
-top: 5px;
-      }
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
 .dubai-rectangle-988_25 {
-        width: 60px;
-height: 60px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 30px 30px 30px 30px;
-background-color: rgba(62, 91, 242, 1);
-      }
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(62, 91, 242, 1);
+}
 .dubai-vector-988_26 {
-        width: 26.26953125px;
-height: 42.7685546875px;
-background-image: url(@/assets/images/register-swap-token-eth-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 16.5px;
-top: 9px;
-      }
+    width: 26.26953125px;
+    height: 42.7685546875px;
+    background-image: url(@/assets/images/register-swap-token-eth-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 16.5px;
+    top: 9px;
+}
 .dubai-group-988_29 {
-        width: 738px;
-height: 60px;
-position: absolute;
-left: 1px;
-top: 264px;
-      }
+    width: 738px;
+    height: 60px;
+    position: absolute;
+    left: 1px;
+    top: 264px;
+}
 .dubai-group-988_30 {
-        width: 60px;
-height: 60px;
-position: absolute;
-left: 339px;
-top: 0px;
-      }
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 339px;
+    top: 0px;
+}
 .dubai-vector-988_31 {
-        position: absolute;
-inset: 0.000050862630208333336% 0.0000762939453125% -0.000050862630208333336% -0.0000762939453125% ;
-background-image: url(@/assets/images/register-swap-action-ring.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-      }
+    position: absolute;
+    inset: 0.000050862630208333336%
+        0.0000762939453125% -0.000050862630208333336% -0.0000762939453125%;
+    background-image: url(@/assets/images/register-swap-action-ring.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .vector-wrapper-988_31 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 60px;
-height: 60px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+}
 .dubai-vector-988_32 {
-        width: 19px;
-height: 25px;
-background-image: url(@/assets/images/register-swap-action-arrow.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 21px;
-top: 18px;
-      }
+    width: 19px;
+    height: 25px;
+    background-image: url(@/assets/images/register-swap-action-arrow.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 21px;
+    top: 18px;
+}
 .dubai-vector-988_34 {
-        width: 329px;
-height: 0.5px;
-background-image: url(@/assets/images/register-swap-divider-line-right.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 409px;
-top: 29.75px;
-      }
+    width: 329px;
+    height: 0.5px;
+    background-image: url(@/assets/images/register-swap-divider-line-right.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 409px;
+    top: 29.75px;
+}
 .dubai-vector-988_35 {
-        width: 329px;
-height: 0.5px;
-background-image: url(@/assets/images/register-swap-divider-line-left.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 29.75px;
-      }
+    width: 329px;
+    height: 0.5px;
+    background-image: url(@/assets/images/register-swap-divider-line-left.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 29.75px;
+}
 .dubai-group-988_36 {
-        width: 740px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 584px;
-      }
+    width: 740px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 584px;
+}
 .dubai-group-988_37 {
-        width: 740px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 740px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-rectangle-988_38 {
-        width: 740px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 60px 60px 60px 60px;
-background-color: rgba(35, 199, 235, 1);
-      }
+    width: 740px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 60px 60px 60px 60px;
+    background-color: rgba(35, 199, 235, 1);
+}
 .dubai-paragraph-988_39 {
-        font-size: 24px;
-font-family: "Alibaba PuHuiTi 3.0-75 SemiBold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(4, 4, 4, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 304px;
-top: 23px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 24px;
+    font-family: 'Alibaba PuHuiTi 3.0-75 SemiBold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(4, 4, 4, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 304px;
+    top: 23px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-group-988_40 {
-        width: 680px;
-height: 140px;
-position: absolute;
-left: 30px;
-top: 364px;
-      }
+    width: 680px;
+    height: 140px;
+    position: absolute;
+    left: 30px;
+    top: 364px;
+}
 .dubai-rectangle-988_41 {
-        width: 100%;
-height: 100%;
-position: relative;
-border-radius: 10px 10px 10px 10px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(4, 4, 4, 0.10000000149011612);
-      }
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(4, 4, 4, 0.10000000149011612);
+}
 .stroke-wrapper-988_41 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 680px;
-height: 140px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 680px;
+    height: 140px;
+}
 .stroke-988_41 {
-        position: absolute;
-inset: 0px;
-border-radius: 10px 10px 10px 10px;
-pointer-events: none;
-border-width: 1px 1px 1px 1px;
-border-style: solid;
-box-sizing: border-box;
-border-color: rgba(255, 255, 255, 0.20000000298023224);
-      }
+    position: absolute;
+    inset: 0px;
+    border-radius: 10px 10px 10px 10px;
+    pointer-events: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.20000000298023224);
+}
 .dubai-group-988_42 {
-        width: 126px;
-height: 104px;
-position: absolute;
-left: 530px;
-top: 18px;
-      }
+    width: 126px;
+    height: 104px;
+    position: absolute;
+    left: 530px;
+    top: 18px;
+}
 .dubai-paragraph-988_43 {
-        font-size: 60px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 60px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-paragraph-988_44 {
-        font-size: 18px;
-font-family: "Alibaba PuHuiTi 3.0-65 Medium";
-font-weight: 500;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: absolute;
-left: 59px;
-top: 79px;
-white-space: pre;
-flex-grow: 0;
-opacity: 0.800000011920929;
-      }
+    font-size: 18px;
+    font-family: 'Alibaba PuHuiTi 3.0-65 Medium';
+    font-weight: 500;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 59px;
+    top: 79px;
+    white-space: pre;
+    flex-grow: 0;
+    opacity: 0.800000011920929;
+}
 .dubai-group-988_45 {
-        width: 99px;
-height: 70px;
-position: absolute;
-left: 96px;
-top: 35px;
-      }
+    width: 99px;
+    height: 70px;
+    position: absolute;
+    left: 96px;
+    top: 35px;
+}
 .dubai-group-988_46 {
-        width: 99px;
-height: 70px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 99px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-group-988_47 {
-        width: 99px;
-height: 39px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 99px;
+    height: 39px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-paragraph-988_48 {
-        font-size: 28px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 28px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_49 {
-        width: 20px;
-height: 20px;
-background-image: url(@/assets/images/register-token-amount-copy-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 79px;
-top: 9px;
-      }
+    width: 20px;
+    height: 20px;
+    background-image: url(@/assets/images/register-token-amount-copy-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 79px;
+    top: 9px;
+}
 .dubai-paragraph-988_51 {
-        font-size: 18px;
-font-family: "Alibaba PuHuiTi 3.0-65 Medium";
-font-weight: 500;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 45px;
-white-space: pre;
-flex-grow: 0;
-opacity: 0.800000011920929;
-      }
+    font-size: 18px;
+    font-family: 'Alibaba PuHuiTi 3.0-65 Medium';
+    font-weight: 500;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    white-space: pre;
+    flex-grow: 0;
+    opacity: 0.800000011920929;
+}
 .dubai-vector-988_52 {
-        width: 60px;
-height: 60px;
-background-image: url(@/assets/images/register-bnb-token-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 24px;
-top: 40px;
-      }
+    width: 60px;
+    height: 60px;
+    background-image: url(@/assets/images/register-bnb-token-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 24px;
+    top: 40px;
+}
 .dubai-group-988_55 {
-        width: 476px;
-height: 331px;
-position: absolute;
-left: 0px;
-top: 106px;
-      }
+    width: 476px;
+    height: 331px;
+    position: absolute;
+    left: 0px;
+    top: 106px;
+}
 .dubai-group-988_56 {
-        width: 476px;
-height: 331px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 476px;
+    height: 331px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-paragraph-988_57 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-55 Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 228px;
-white-space: pre;
-flex-grow: 0;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 228px;
+    white-space: pre;
+    flex-grow: 0;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
+}
 .dubai-group-988_58 {
-        width: 476px;
-height: 188px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 476px;
+    height: 188px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-paragraph-988_59 {
-        font-size: 70px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-line-height: 48px;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 140px;
-white-space: pre;
-flex-grow: 0;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
-      }
+    font-size: 70px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    white-space: pre;
+    flex-grow: 0;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
+}
 .dubai-paragraph-988_60 {
-        font-size: 70px;
-font-family: "DFPZongYiW7-GB-Regular";
-font-weight: 400;
-letter-spacing: 0em;
-line-height: 120px;
-text-transform: uppercase;
-color: rgba(35, 199, 235, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
-      }
+    font-size: 70px;
+    font-family: 'DFPZongYiW7-GB-Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: rgba(35, 199, 235, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 1);
+}
 .dubai-group-988_61 {
-        width: 455px;
-height: 41px;
-position: absolute;
-left: 0px;
-top: 290px;
-      }
+    width: 455px;
+    height: 41px;
+    position: absolute;
+    left: 0px;
+    top: 290px;
+}
 .dubai-group-988_62 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
 .dubai-rectangle-988_63 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(62, 91, 242, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(62, 91, 242, 1);
+}
 .dubai-vector-988_64 {
-        width: 17.51171875px;
-height: 28.5123291015625px;
-background-image: url(@/assets/images/register-cta-token-eth-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 11px;
-top: 6px;
-      }
+    width: 17.51171875px;
+    height: 28.5123291015625px;
+    background-image: url(@/assets/images/register-cta-token-eth-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 11px;
+    top: 6px;
+}
 .dubai-group-988_67 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 52px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 52px;
+    top: 1px;
+}
 .dubai-rectangle-988_68 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(240, 185, 11, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(240, 185, 11, 1);
+}
 .dubai-vector-988_69 {
-        width: 65%;
-height: 30px;
-background-image: url(@/assets/images/shared-perspective-grid-lines.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 17.5%;
-right: 17.5%;
-top: 50%;
-transform: translateY(calc(-50% + 0px));
-      }
+    width: 65%;
+    height: 30px;
+    background-image: url(@/assets/images/shared-perspective-grid-lines.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 17.5%;
+    right: 17.5%;
+    top: 50%;
+    transform: translateY(calc(-50% + 0px));
+}
 .dubai-group-988_70 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 363px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 363px;
+    top: 1px;
+}
 .dubai-rectangle-988_71 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(240, 185, 11, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(240, 185, 11, 1);
+}
 .dubai-vector-988_72 {
-        width: 65%;
-height: 30px;
-background-image: url(@/assets/images/register-chain-box-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 17.5%;
-right: 17.5%;
-top: 50%;
-transform: translateY(calc(-50% + 0px));
-      }
+    width: 65%;
+    height: 30px;
+    background-image: url(@/assets/images/register-chain-box-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 17.5%;
+    right: 17.5%;
+    top: 50%;
+    transform: translateY(calc(-50% + 0px));
+}
 .dubai-group-988_73 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 104px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 104px;
+    top: 1px;
+}
 .dubai-rectangle-988_74 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(54, 103, 247, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(54, 103, 247, 1);
+}
 .dubai-rectangle-988_75 {
-        width: 36px;
-height: 31px;
-position: absolute;
-left: 2px;
-top: 4px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-chain-logo-arrow-mark.png);
-      }
+    width: 36px;
+    height: 31px;
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-chain-logo-arrow-mark.png);
+}
 .dubai-group-988_76 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 155px;
-top: 0px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 155px;
+    top: 0px;
+}
 .dubai-rectangle-988_77 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(131, 220, 252, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(131, 220, 252, 1);
+}
 .dubai-rectangle-988_78 {
-        width: 36px;
-height: 36px;
-position: absolute;
-left: 2px;
-top: 2px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-chain-logo-corner-mark.png);
-      }
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-chain-logo-corner-mark.png);
+}
 .dubai-group-988_79 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 259px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 259px;
+    top: 1px;
+}
 .dubai-rectangle-988_80 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(106, 213, 170, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(106, 213, 170, 1);
+}
 .dubai-rectangle-988_81 {
-        width: 36px;
-height: 33px;
-position: absolute;
-left: 2px;
-top: 4px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-chain-logo-striped-orb.png);
-      }
+    width: 36px;
+    height: 33px;
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-chain-logo-striped-orb.png);
+}
 .dubai-group-988_82 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 207px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 207px;
+    top: 1px;
+}
 .dubai-rectangle-988_83 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(0, 82, 255, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(0, 82, 255, 1);
+}
 .dubai-rectangle-988_84 {
-        width: 20px;
-height: 20px;
-position: absolute;
-left: 10px;
-top: 10px;
-background-color: rgba(255, 255, 255, 1);
-      }
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
 .dubai-group-988_85 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 415px;
-top: 1px;
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 415px;
+    top: 1px;
+}
 .dubai-rectangle-988_86 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 6px 6px 6px 6px;
-background-color: rgba(34, 13, 86, 1);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgba(34, 13, 86, 1);
+}
 .dubai-rectangle-988_87 {
-        width: 34px;
-height: 32px;
-position: absolute;
-left: 3px;
-top: 4px;
-background-size: 105.8823% 107.5133%;
-background-position: 0.00px -1.40px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-chain-logo-outline-loop.png);
-      }
+    width: 34px;
+    height: 32px;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    background-size: 105.8823% 107.5133%;
+    background-position: 0px -1.4px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-chain-logo-outline-loop.png);
+}
 .dubai-rectangle-988_88 {
-        width: 40px;
-height: 40px;
-position: absolute;
-left: 311px;
-top: 1px;
-border-radius: 6px 6px 6px 6px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-chain-logo-gradient-bars.png);
-      }
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 311px;
+    top: 1px;
+    border-radius: 6px 6px 6px 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-chain-logo-gradient-bars.png);
+}
 .dubai-paragraph-988_89 {
-        font-size: 24px;
-font-family: "Alibaba PuHuiTi 3.0-85 Bold";
-font-weight: 700;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: 31px;
-height: auto;
-position: absolute;
-left: 968.0000610351562px;
-top: 499.9999694824219px;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
-      }
+    font-size: 24px;
+    font-family: 'Alibaba PuHuiTi 3.0-85 Bold';
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: 31px;
+    height: auto;
+    position: absolute;
+    left: 968.0000610351562px;
+    top: 499.9999694824219px;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
+}
 .dubai-rectangle-988_90 {
-        width: 80px;
-height: 92px;
-position: absolute;
-left: -135.00003051757812px;
-top: 199.99996948242188px;
-transform: rotateY(180deg);
-filter: blur(2.6666666666666665px);
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 1.37px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-opacity: 0.20000000298023224;
-      }
+    width: 80px;
+    height: 92px;
+    position: absolute;
+    left: -135.00003051757812px;
+    top: 199.99996948242188px;
+    transform: rotateY(180deg);
+    filter: blur(2.6666666666666665px);
+    background-size: 100% 96.3571%;
+    background-position: 0px 1.37px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+    opacity: 0.20000000298023224;
+}
 .dubai-rectangle-988_91 {
-        width: 80px;
-height: 92px;
-position: absolute;
-left: -715.0000610351562px;
-top: 403.9999694824219px;
-transform: rotateY(180deg);
-filter: blur(2.6666666666666665px);
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 1.37px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-opacity: 0.20000000298023224;
-      }
+    width: 80px;
+    height: 92px;
+    position: absolute;
+    left: -715.0000610351562px;
+    top: 403.9999694824219px;
+    transform: rotateY(180deg);
+    filter: blur(2.6666666666666665px);
+    background-size: 100% 96.3571%;
+    background-position: 0px 1.37px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+    opacity: 0.20000000298023224;
+}
 .dubai-rectangle-988_92 {
-        width: 72px;
-height: 83px;
-position: absolute;
-left: -60.00004577636719px;
-top: 723.9999389648438px;
-transform: rotateY(180deg);
-filter: blur(2.6666666666666665px);
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 1.23px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-opacity: 0.20000000298023224;
-      }
+    width: 72px;
+    height: 83px;
+    position: absolute;
+    left: -60.00004577636719px;
+    top: 723.9999389648438px;
+    transform: rotateY(180deg);
+    filter: blur(2.6666666666666665px);
+    background-size: 100% 96.3571%;
+    background-position: 0px 1.23px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+    opacity: 0.20000000298023224;
+}
 .dubai-rectangle-988_93 {
-        width: 1920px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 0px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: transparent;
-      }
+    width: 1920px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: transparent;
+}
 .dubai-rectangle-988_94 {
-        width: 1920px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 0px;
-filter: blur(1.3333333333333333px);
-background-color: transparent;
-      }
+    width: 1920px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    filter: blur(1.3333333333333333px);
+    background-color: transparent;
+}
 .dubai-rectangle-988_95 {
-        width: 1920px;
-height: 80px;
-position: absolute;
-left: 0px;
-top: 0px;
-background-color: transparent;
-      }
+    width: 1920px;
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+}
 .dubai-vector-988_96 {
-        width: 1920px;
-height: 0.5px;
-background-image: url(@/assets/images/shared-horizontal-divider-line-alpha.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 79.75px;
-      }
+    width: 1920px;
+    height: 0.5px;
+    background-image: url(@/assets/images/shared-horizontal-divider-line-alpha.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 79.75px;
+}
 .dubai-group-988_97 {
-        width: 133px;
-height: 40px;
-position: absolute;
-left: 240px;
-top: 20px;
-      }
+    width: 133px;
+    height: 40px;
+    position: absolute;
+    left: 240px;
+    top: 20px;
+}
 .dubai-vector-988_98 {
-        width: 24.06%;
-height: 30.5008544921875px;
-background-image: url(@/assets/images/register-header-brand-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0%;
-right: 75.94%;
-top: 50%;
-transform: translateY(calc(-50% + 0.749598503112793px));
-      }
+    width: 24.06%;
+    height: 30.5008544921875px;
+    background-image: url(@/assets/images/register-header-brand-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0%;
+    right: 75.94%;
+    top: 50%;
+    transform: translateY(calc(-50% + 0.749598503112793px));
+}
 .dubai-paragraph-988_100 {
-        font-size: 40px;
-font-family: "DFPZongYiW7-GB-Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 42px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 40px;
+    font-family: 'DFPZongYiW7-GB-Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 42px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-group-988_101 {
-        width: 62px;
-height: 21px;
-position: absolute;
-left: 1131px;
-top: 30px;
-      }
+    width: 62px;
+    height: 21px;
+    position: absolute;
+    left: 1131px;
+    top: 30px;
+}
 .dubai-paragraph-988_102 {
-        font-size: 18px;
-font-family: "SF Pro Display-Semibold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 28px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 18px;
+    font-family: 'SF Pro Display-Semibold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_103 {
-        width: 20px;
-height: 20px;
-background-image: url(@/assets/images/register-header-nft-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 1px;
-      }
+    width: 20px;
+    height: 20px;
+    background-image: url(@/assets/images/register-header-nft-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
 .dubai-paragraph-988_106 {
-        font-size: 18px;
-font-family: "SF Pro Display-Semibold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 1020px;
-top: 30px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 18px;
+    font-family: 'SF Pro Display-Semibold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 1020px;
+    top: 30px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-group-988_107 {
-        width: 62px;
-height: 21px;
-position: absolute;
-left: 708px;
-top: 30px;
-      }
+    width: 62px;
+    height: 21px;
+    position: absolute;
+    left: 708px;
+    top: 30px;
+}
 .dubai-frame-988_108 {
-        width: auto;
-height: auto;
-position: absolute;
-left: 28px;
-top: 0px;
-display: flex;
-flex-direction: row;
-gap: 4px;
-align-items: center;
-      }
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
 .dubai-paragraph-988_109 {
-        font-size: 18px;
-font-family: "SF Pro Display-Semibold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: relative;
-flex-shrink: 0;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 18px;
+    font-family: 'SF Pro Display-Semibold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_110 {
-        width: 20px;
-height: 20px;
-background-image: url(@/assets/images/register-header-mall-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 1px;
-      }
+    width: 20px;
+    height: 20px;
+    background-image: url(@/assets/images/register-header-mall-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
 .dubai-group-988_112 {
-        width: 62px;
-height: 21px;
-position: absolute;
-left: 850px;
-top: 30px;
-      }
+    width: 62px;
+    height: 21px;
+    position: absolute;
+    left: 850px;
+    top: 30px;
+}
 .dubai-frame-988_113 {
-        width: auto;
-height: auto;
-position: absolute;
-left: 28px;
-top: 0px;
-display: flex;
-flex-direction: row;
-gap: 4px;
-align-items: center;
-      }
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
 .dubai-paragraph-988_114 {
-        font-size: 18px;
-font-family: "SF Pro Display-Semibold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(35, 199, 235, 1);
-width: auto;
-height: auto;
-position: relative;
-flex-shrink: 0;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 18px;
+    font-family: 'SF Pro Display-Semibold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(35, 199, 235, 1);
+    width: auto;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_115 {
-        width: 20px;
-height: 20px;
-background-image: url(@/assets/images/register-header-defi-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 1px;
-      }
+    width: 20px;
+    height: 20px;
+    background-image: url(@/assets/images/register-header-defi-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
 .dubai-group-988_117 {
-        width: 125px;
-height: 42px;
-position: absolute;
-left: 1555px;
-top: 19px;
-      }
+    width: 125px;
+    height: 42px;
+    position: absolute;
+    left: 1555px;
+    top: 19px;
+}
 .dubai-rectangle-988_118 {
-        width: 125px;
-height: 42px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 40px 40px 40px 40px;
-background-color: rgba(35, 199, 235, 1);
-      }
+    width: 125px;
+    height: 42px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: rgba(35, 199, 235, 1);
+}
 .dubai-paragraph-988_119 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-75 SemiBold";
-font-weight: 600;
-text-align: center;
-letter-spacing: 0.009999999776482582em;
-line-height: 32px;
-color: rgba(4, 4, 4, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 31px;
-top: 5px;
-white-space: pre;
-flex-grow: 0;
-opacity: 0.800000011920929;
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-75 SemiBold';
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.009999999776482582em;
+    line-height: 32px;
+    color: rgba(4, 4, 4, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 31px;
+    top: 5px;
+    white-space: pre;
+    flex-grow: 0;
+    opacity: 0.800000011920929;
+}
 .dubai-group-988_120 {
-        width: 20px;
-height: 20px;
-position: absolute;
-left: 992px;
-top: 31px;
-      }
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 992px;
+    top: 31px;
+}
 .dubai-rectangle-988_121 {
-        width: 20px;
-height: 20px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-group-988_122 {
-        width: 18px;
-height: 18px;
-position: absolute;
-left: 1px;
-top: 1px;
-      }
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
 .dubai-vector-988_123 {
-        width: 8.197265625px;
-height: 10.6610107421875px;
-background-image: url(@/assets/images/register-header-fun-icon-mark.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 5px;
-top: 4px;
-      }
+    width: 8.197265625px;
+    height: 10.6610107421875px;
+    background-image: url(@/assets/images/register-header-fun-icon-mark.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
 .dubai-vector-988_136 {
-        width: 19.6015625px;
-height: 19.60009765625px;
-background-image: url(@/assets/images/register-header-fun-icon-ring.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 19.6015625px;
+    height: 19.60009765625px;
+    background-image: url(@/assets/images/register-header-fun-icon-ring.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-rectangle-988_140 {
-        width: 1920px;
-height: 1080px;
-position: absolute;
-left: 0px;
-top: 0px;
-backdrop-filter: blur(5.333333333333333px);
-background-color: rgba(0, 0, 0, 0.10000000149011612);
-      }
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(5.333333333333333px);
+    background-color: rgba(0, 0, 0, 0.10000000149011612);
+}
 .dubai-group-994_192 {
-        width: 600px;
-height: 704px;
-position: absolute;
-left: 660px;
-top: 188px;
-      }
+    width: 600px;
+    height: 704px;
+    position: absolute;
+    left: 660px;
+    top: 188px;
+}
 .dubai-rectangle-988_141 {
-        width: 600px;
-height: 704px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 20px 20px 20px 20px;
-background-color: rgba(31, 31, 30, 1);
-      }
+    width: 600px;
+    height: 704px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(31, 31, 30, 1);
+}
 .dubai-paragraph-988_145 {
-        font-size: 64px;
-font-family: "DFPZongYiW7-GB-Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(35, 199, 235, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 124px;
-top: 200px;
-white-space: pre;
-flex-grow: 0;
-text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
-      }
+    font-size: 64px;
+    font-family: 'DFPZongYiW7-GB-Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(35, 199, 235, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 124px;
+    top: 200px;
+    white-space: pre;
+    flex-grow: 0;
+    text-shadow: 1px 2px 8px rgba(9.627716064453125, 25.37155532836914, 69.14710235595703, 0);
+}
 .dubai-vector-988_146 {
-        width: 32px;
-height: 32px;
-background-image: url(@/assets/images/register-modal-close-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 536px;
-top: 32px;
-      }
+    width: 32px;
+    height: 32px;
+    background-image: url(@/assets/images/register-modal-close-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 536px;
+    top: 32px;
+}
 .dubai-rectangle-988_148 {
-        width: 100px;
-height: 115px;
-position: absolute;
-left: 250px;
-top: 79px;
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 1.71px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-      }
+    width: 100px;
+    height: 115px;
+    position: absolute;
+    left: 250px;
+    top: 79px;
+    background-size: 100% 96.3571%;
+    background-position: 0px 1.71px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+}
 .dubai-rectangle-991_185 {
-        width: 49px;
-height: 56px;
-position: absolute;
-left: 32px;
-top: 27px;
-transform: rotateY(180deg);
-filter: blur(2.6666666666666665px);
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 0.83px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-opacity: 0.20000000298023224;
-      }
+    width: 49px;
+    height: 56px;
+    position: absolute;
+    left: 32px;
+    top: 27px;
+    transform: rotateY(180deg);
+    filter: blur(2.6666666666666665px);
+    background-size: 100% 96.3571%;
+    background-position: 0px 0.83px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+    opacity: 0.20000000298023224;
+}
 .dubai-rectangle-991_186 {
-        width: 49px;
-height: 56px;
-position: absolute;
-left: -486px;
-top: 632px;
-transform: rotateY(180deg);
-filter: blur(2.6666666666666665px);
-background-size: 100.0000% 96.3571%;
-background-position: 0.00px 0.83px;
-background-repeat: no-repeat;
-background-image: url(@/assets/images/shared-gem-coin.png);
-opacity: 0.20000000298023224;
-      }
+    width: 49px;
+    height: 56px;
+    position: absolute;
+    left: -486px;
+    top: 632px;
+    transform: rotateY(180deg);
+    filter: blur(2.6666666666666665px);
+    background-size: 100% 96.3571%;
+    background-position: 0px 0.83px;
+    background-repeat: no-repeat;
+    background-image: url(@/assets/images/shared-gem-coin.png);
+    opacity: 0.20000000298023224;
+}
 .dubai-group-988_162 {
-        width: 520px;
-height: 72px;
-position: absolute;
-left: 40px;
-top: 308px;
-      }
+    width: 520px;
+    height: 72px;
+    position: absolute;
+    left: 40px;
+    top: 308px;
+}
 .dubai-rectangle-988_156 {
-        width: 100%;
-height: 100%;
-position: relative;
-border-radius: 20px 20px 20px 20px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(4, 4, 4, 0.10000000149011612);
-      }
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(4, 4, 4, 0.10000000149011612);
+}
 .stroke-wrapper-988_156 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 520px;
-height: 72px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 520px;
+    height: 72px;
+}
 .stroke-988_156 {
-        position: absolute;
-inset: 0px;
-border-radius: 20px 20px 20px 20px;
-pointer-events: none;
-border-width: 1px 1px 1px 1px;
-border-style: solid;
-box-sizing: border-box;
-border-color: rgba(255, 255, 255, 0.5);
-      }
+    position: absolute;
+    inset: 0px;
+    border-radius: 20px 20px 20px 20px;
+    pointer-events: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.5);
+}
 .dubai-frame-991_179 {
-        width: auto;
-height: auto;
-position: absolute;
-left: 419px;
-top: 19px;
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: flex-start;
-padding: 6px 12px 6px 12px;
-border-radius: 20px 20px 20px 20px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(87, 91, 102, 1);
-      }
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 419px;
+    top: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 6px 12px 6px 12px;
+    border-radius: 20px 20px 20px 20px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(87, 91, 102, 1);
+}
 .dubai-frame-991_180 {
-        width: auto;
-height: auto;
-position: relative;
-flex-shrink: 0;
-display: flex;
-flex-direction: row;
-gap: 12px;
-align-items: center;
-      }
+    width: auto;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
 .dubai-paragraph-991_181 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-55 Regular";
-font-weight: 400;
-letter-spacing: 0.009999999776482582em;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: relative;
-flex-shrink: 0;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
+    font-weight: 400;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-group-988_161 {
-        width: 163px;
-height: 24px;
-position: absolute;
-left: 24px;
-top: 24px;
-      }
+    width: 163px;
+    height: 24px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
 .dubai-paragraph-988_157 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-55 Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: capitalize;
-color: rgba(255, 255, 255, 0.5);
-width: auto;
-height: auto;
-position: absolute;
-left: 34px;
-top: 1px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 34px;
+    top: 1px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_159 {
-        width: 24px;
-height: 24px;
-background-image: url(@/assets/images/register-email-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 24px;
+    height: 24px;
+    background-image: url(@/assets/images/register-email-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-group-988_172 {
-        width: 520px;
-height: 72px;
-position: absolute;
-left: 40px;
-top: 420px;
-      }
+    width: 520px;
+    height: 72px;
+    position: absolute;
+    left: 40px;
+    top: 420px;
+}
 .dubai-rectangle-988_164 {
-        width: 100%;
-height: 100%;
-position: relative;
-border-radius: 20px 20px 20px 20px;
-backdrop-filter: blur(1.3333333333333333px);
-background-color: rgba(4, 4, 4, 0.10000000149011612);
-      }
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    backdrop-filter: blur(1.3333333333333333px);
+    background-color: rgba(4, 4, 4, 0.10000000149011612);
+}
 .stroke-wrapper-988_164 {
-        position: absolute;
-left: 0px;
-top: 0px;
-width: 520px;
-height: 72px;
-      }
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 520px;
+    height: 72px;
+}
 .stroke-988_164 {
-        position: absolute;
-inset: 0px;
-border-radius: 20px 20px 20px 20px;
-pointer-events: none;
-border-width: 1px 1px 1px 1px;
-border-style: solid;
-box-sizing: border-box;
-border-color: rgba(255, 255, 255, 0.5);
-      }
+    position: absolute;
+    inset: 0px;
+    border-radius: 20px 20px 20px 20px;
+    pointer-events: none;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.5);
+}
 .dubai-group-998_193 {
-        width: 148px;
-height: 24px;
-position: absolute;
-left: 24px;
-top: 24px;
-      }
+    width: 148px;
+    height: 24px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
 .dubai-group-988_165 {
-        width: 114px;
-height: 22px;
-position: absolute;
-left: 34px;
-top: 1px;
-      }
+    width: 114px;
+    height: 22px;
+    position: absolute;
+    left: 34px;
+    top: 1px;
+}
 .dubai-paragraph-988_166 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-55 Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: capitalize;
-color: rgba(255, 255, 255, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 0px;
-top: 0px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-vector-988_169 {
-        width: 24px;
-height: 24px;
-background-image: url(@/assets/images/register-wallet-icon.png);
-background-size: 100% 100%;
-background-repeat: no-repeat;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 24px;
+    height: 24px;
+    background-image: url(@/assets/images/register-wallet-icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-paragraph-991_173 {
-        font-size: 16px;
-font-family: "Alibaba PuHuiTi 3.0-55 Regular";
-font-weight: 400;
-letter-spacing: 0em;
-text-transform: uppercase;
-color: rgba(35, 199, 235, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 233px;
-top: 640px;
-white-space: pre;
-flex-grow: 0;
-      }
+    font-size: 16px;
+    font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: rgba(35, 199, 235, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 233px;
+    top: 640px;
+    white-space: pre;
+    flex-grow: 0;
+}
 .dubai-group-994_187 {
-        width: 520px;
-height: 64px;
-position: absolute;
-left: 40px;
-top: 542px;
-      }
+    width: 520px;
+    height: 64px;
+    position: absolute;
+    left: 40px;
+    top: 542px;
+}
 .dubai-group-994_188 {
-        width: 520px;
-height: 64px;
-position: absolute;
-left: 0px;
-top: 0px;
-      }
+    width: 520px;
+    height: 64px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
 .dubai-rectangle-994_189 {
-        width: 520px;
-height: 64px;
-position: absolute;
-left: 0px;
-top: 0px;
-border-radius: 60px 60px 60px 60px;
-background-color: rgba(35, 199, 235, 1);
-      }
+    width: 520px;
+    height: 64px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 60px 60px 60px 60px;
+    background-color: rgba(35, 199, 235, 1);
+}
 .dubai-paragraph-994_190 {
-        font-size: 24px;
-font-family: "Alibaba PuHuiTi 3.0-75 SemiBold";
-font-weight: 600;
-letter-spacing: 0.009999999776482582em;
-color: rgba(4, 4, 4, 1);
-width: auto;
-height: auto;
-position: absolute;
-left: 183px;
-top: 15px;
-white-space: pre;
-flex-grow: 0;
-      }
-
+    font-size: 24px;
+    font-family: 'Alibaba PuHuiTi 3.0-75 SemiBold';
+    font-weight: 600;
+    letter-spacing: 0.009999999776482582em;
+    color: rgba(4, 4, 4, 1);
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 183px;
+    top: 15px;
+    white-space: pre;
+    flex-grow: 0;
+}

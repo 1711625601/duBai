@@ -1,12 +1,24 @@
 @font-face {
-                font-family: "Inter-Semi Bold"; font-style: normal; src: url('@/assets/fonts/Inter-SemiBold_1.otf'); font-weight: 600
-            }
+    font-family: 'Inter-Semi Bold';
+    font-style: normal;
+    src: url('@/assets/fonts/Inter-SemiBold_1.otf');
+    font-weight: 600;
+}
 @font-face {
-                font-family: "Inter-Medium"; font-style: normal; src: url('@/assets/fonts/Inter-Medium_1.otf'); font-weight: 500
-            }
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    src: url('@/assets/fonts/Inter-Medium_1.otf');
+    font-weight: 500;
+}
 @font-face {
-                font-family: "Arial-Regular"; font-style: normal; src: url('@/assets/fonts/ARIAL_1.ttf'); font-weight: 400
-            }
+    font-family: 'Arial-Regular';
+    font-style: normal;
+    src: url('@/assets/fonts/ARIAL_1.ttf');
+    font-weight: 400;
+}
 @font-face {
-                font-family: "Alibaba PuHuiTi 2.0-55 Regular"; font-style: normal; src: url('@/assets/fonts/AlibabaPuHuiTi-2-55-Regular_1.ttf'); font-weight: 400
-            }
+    font-family: 'Alibaba PuHuiTi 2.0-55 Regular';
+    font-style: normal;
+    src: url('@/assets/fonts/AlibabaPuHuiTi-2-55-Regular_1.ttf');
+    font-weight: 400;
+}
