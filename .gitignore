@@ -1,0 +1,46 @@
+# Core dependency directories (recursive)
+node_modules/
+**/node_modules/
+.pnpm-store/
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+
+# Next.js / frontend build outputs
+.next/
+out/
+dist/
+coverage/
+.turbo/
+**/.next/
+**/out/
+**/dist/
+**/coverage/
+**/.turbo/
+uploads/
+**/uploads/
+
+# Hardhat / blockchain build outputs
+artifacts/
+cache/
+typechain/
+typechain-types/
+**/artifacts/
+**/cache/
+**/typechain/
+**/typechain-types/
+**/ignition/deployments/
+
+# IDE / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.local-dev/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
