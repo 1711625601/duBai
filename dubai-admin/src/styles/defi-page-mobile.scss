@@ -1,0 +1,27 @@
+.defi-mobile__hero-visual {
+    display: grid;
+    gap: 14px;
+    justify-items: center;
+}
+
+.defi-mobile__hero-coin {
+    width: min(100%, 280px);
+    object-fit: contain;
+    filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.42));
+}
+
+.defi-mobile__swap-meta {
+    align-items: center;
+}
+
+.defi-mobile__partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+@media (max-width: 380px) {
+    .defi-mobile__partner-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

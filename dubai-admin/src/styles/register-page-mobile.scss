@@ -1,0 +1,17 @@
+.register-mobile__hero-visual {
+    display: grid;
+    gap: 14px;
+    justify-items: center;
+}
+
+.register-mobile__hero-coin {
+    width: min(100%, 260px);
+    object-fit: contain;
+    filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.42));
+}
+
+.register-mobile__field-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

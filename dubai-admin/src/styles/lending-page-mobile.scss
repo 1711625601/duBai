@@ -1,0 +1,36 @@
+.lending-mobile__hero-visual {
+    position: relative;
+    width: min(100%, 280px);
+    display: flex;
+    justify-content: center;
+}
+
+.lending-mobile__hero-coin {
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 22px 34px rgba(0, 0, 0, 0.42));
+}
+
+.lending-mobile__hero-badge {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    width: 84px;
+    object-fit: contain;
+}
+
+.lending-mobile__big-number {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.lending-mobile__apy-row {
+    align-items: center;
+}
+
+.lending-mobile__asset-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

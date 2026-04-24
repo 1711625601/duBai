@@ -1,0 +1,46 @@
+.profile-mobile__hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-mobile__hero-ring {
+    width: min(100%, 180px);
+    object-fit: contain;
+}
+
+.profile-mobile__summary-card {
+    gap: 14px;
+}
+
+.profile-mobile__identity {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.profile-mobile__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.profile-mobile__copy-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.profile-mobile__wallet-balance {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
