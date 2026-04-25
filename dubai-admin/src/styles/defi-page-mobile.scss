@@ -1,27 +1,603 @@
-.defi-mobile__hero-visual {
-    display: grid;
-    gap: 14px;
-    justify-items: center;
+.defi-mobile {
+    --defi-background: oklch(0.04 0.01 240);
+    --defi-foreground: oklch(0.98 0 0);
+    --defi-cyan: oklch(0.78 0.18 220);
+    --defi-cyan-deep: oklch(0.65 0.2 230);
+    --defi-surface: oklch(0.08 0.02 240);
+    --defi-border: oklch(0.25 0.05 230);
+    --defi-muted: oklch(0.65 0.03 240);
+    --defi-gradient-cyan: linear-gradient(135deg, var(--defi-cyan), var(--defi-cyan-deep));
+    --defi-gradient-hero: radial-gradient(
+        circle at 70% 30%,
+        oklch(0.2 0.1 230 / 0.4),
+        transparent 60%
+    );
+    --defi-shadow-cyan: 0 8px 32px oklch(0.65 0.2 230 / 0.35);
+    --defi-shadow-glow: 0 0 40px oklch(0.78 0.18 220 / 0.4);
+
+    position: relative;
+    min-height: 100dvh;
+    width: 100%;
+    min-width: 100vw;
+    max-width: none;
+    overflow-x: hidden;
+    color: var(--defi-foreground);
+    background-color: var(--defi-background);
+    background-image:
+        radial-gradient(circle at 20% 30%, oklch(0.78 0.18 220 / 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, oklch(0.65 0.2 230 / 0.1) 0%, transparent 40%);
+    font-family: 'Rajdhani', 'Inter-Medium', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button {
+        font: inherit;
+    }
 }
 
-.defi-mobile__hero-coin {
-    width: min(100%, 280px);
-    object-fit: contain;
-    filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.42));
-}
-
-.defi-mobile__swap-meta {
+.defi-mobile__footer-brand {
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
+    min-width: 0;
+
+    img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+
+    span {
+        color: var(--defi-foreground);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.18em;
+    }
+}
+
+.defi-mobile__main {
+    width: 100%;
+}
+
+.defi-mobile__hero {
+    position: relative;
+    overflow: hidden;
+    padding: 32px 20px 40px;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+
+    &::before {
+        opacity: 0.4;
+        background-image:
+            linear-gradient(oklch(0.78 0.18 220 / 0.15) 1px, transparent 1px),
+            linear-gradient(90deg, oklch(0.78 0.18 220 / 0.15) 1px, transparent 1px);
+        background-size: 40px 40px;
+        mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 30%,
+            black 70%,
+            transparent 100%
+        );
+    }
+
+    &::after {
+        background: var(--defi-gradient-hero);
+    }
+}
+
+.defi-mobile__hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.defi-mobile__hero h1 {
+    display: grid;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+
+    span:first-child {
+        color: var(--defi-cyan);
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+    }
+
+    span:last-child {
+        color: var(--defi-foreground);
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+    }
+}
+
+.defi-mobile__hero-content > p {
+    margin: 12px 0 0;
+    color: var(--defi-muted);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.2em;
+}
+
+.defi-mobile__chain-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.defi-mobile__chain-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.22);
+    font-size: 12px;
+    font-weight: 700;
+
+    img {
+        display: block;
+        object-fit: contain;
+    }
+}
+
+.defi-mobile__chain-icon--eth img {
+    width: 15px;
+    height: 24px;
+}
+
+.defi-mobile__chain-icon--cube img {
+    width: 21px;
+    height: 24px;
+}
+
+.defi-mobile__chain-icon--arrow img,
+.defi-mobile__chain-icon--corner img,
+.defi-mobile__chain-icon--orb img {
+    width: 29px;
+    height: 29px;
+}
+
+.defi-mobile__chain-icon--square::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+}
+
+.defi-mobile__chain-icon--loop img {
+    width: 27px;
+    height: 26px;
+}
+
+.defi-mobile__swap-card {
+    display: grid;
+    margin-top: 32px;
+    padding: 20px;
+    border: 1px solid oklch(0.25 0.05 230 / 0.6);
+    border-radius: 10px;
+    background: oklch(0.08 0.02 240 / 0.8);
+    box-shadow: var(--defi-shadow-cyan);
+    backdrop-filter: blur(16px);
+}
+
+.defi-mobile__swap-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--defi-muted);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.25em;
+}
+
+.defi-mobile__token-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 78px;
+    padding: 16px;
+    border: 1px solid oklch(0.25 0.05 230 / 0.5);
+    border-radius: 10px;
+    background: oklch(0.04 0.01 240 / 0.6);
+}
+
+.defi-mobile__token-panel--from {
+    transform: translateY(-6px);
+}
+
+.defi-mobile__token-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+
+    div {
+        display: grid;
+        gap: 2px;
+        min-width: 0;
+    }
+
+    strong {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--defi-foreground);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    span:not(.defi-mobile__token-icon) {
+        color: var(--defi-muted);
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+.defi-mobile__token-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    overflow: hidden;
+
+    img {
+        display: block;
+        object-fit: contain;
+    }
+}
+
+.defi-mobile__token-icon--eth {
+    background: rgba(62, 91, 242, 1);
+
+    img {
+        width: 16px;
+        height: 26px;
+    }
+}
+
+.defi-mobile__token-icon--bnb img {
+    width: 36px;
+    height: 36px;
+}
+
+.defi-mobile__token-amount {
+    display: grid;
+    gap: 2px;
+    text-align: right;
+
+    strong {
+        color: var(--defi-foreground);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    span {
+        color: var(--defi-muted);
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+.defi-mobile__swap-action {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0 12px;
+
+    button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border: 2px solid oklch(0.78 0.18 220 / 0.6);
+        border-radius: 999px;
+        background: var(--defi-surface);
+        color: var(--defi-cyan);
+        box-shadow: var(--defi-shadow-glow);
+        cursor: pointer;
+    }
+}
+
+.defi-mobile__primary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 24px;
+    border-radius: 999px;
+    background: var(--defi-gradient-cyan);
+    color: oklch(0.08 0.02 240);
+    box-shadow: 0 0 20px oklch(0.78 0.18 220 / 0.4);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    animation: defi-mobile-pulse-glow 3s ease-in-out infinite;
+}
+
+.defi-mobile__partners,
+.defi-mobile__protocol,
+.defi-mobile__notice,
+.defi-mobile__footer {
+    border-top: 1px solid oklch(0.25 0.05 230 / 0.3);
+}
+
+.defi-mobile__partners {
+    padding: 40px 20px;
+
+    p {
+        margin: 0 0 24px;
+        color: var(--defi-muted);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 0.4em;
+    }
 }
 
 .defi-mobile__partner-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 20px;
+    align-items: center;
+
+    span {
+        color: oklch(0.65 0.03 240 / 0.7);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+}
+
+.defi-mobile__protocol {
+    position: relative;
+    overflow: hidden;
+    padding: 48px 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        opacity: 0.6;
+        background-image:
+            radial-gradient(circle at 20% 30%, oklch(0.78 0.18 220 / 0.08) 0%, transparent 40%),
+            radial-gradient(circle at 80% 70%, oklch(0.65 0.2 230 / 0.1) 0%, transparent 40%);
+        pointer-events: none;
+    }
+}
+
+.defi-mobile__protocol-content {
+    position: relative;
+    z-index: 1;
+}
+
+.defi-mobile__protocol h2,
+.defi-mobile__protocol h3 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    line-height: 1.22;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.defi-mobile__protocol h2 {
+    color: var(--defi-cyan);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.defi-mobile__protocol h3 {
+    margin-top: 8px;
+    color: var(--defi-foreground);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.defi-mobile__stats-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 24px 0 12px;
+    color: var(--defi-muted);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+    }
+}
+
+.defi-mobile__stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
 }
 
-@media (max-width: 380px) {
-    .defi-mobile__partner-grid {
-        grid-template-columns: minmax(0, 1fr);
+.defi-mobile__stat-card {
+    display: grid;
+    gap: 6px;
+    min-height: 94px;
+    padding: 16px;
+    border: 1px solid oklch(0.25 0.05 230 / 0.5);
+    border-radius: 18px;
+    background: oklch(0.08 0.02 240 / 0.6);
+    text-align: center;
+
+    strong {
+        color: var(--defi-foreground);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.15;
+    }
+
+    span {
+        color: var(--defi-muted);
+        font-size: 10px;
+        line-height: 1.3;
+    }
+}
+
+.defi-mobile__stat-card--accent {
+    border-color: oklch(0.6 0.2 150 / 0.4);
+    background: oklch(0.2 0.1 150 / 0.3);
+
+    strong {
+        color: oklch(0.75 0.2 150);
+    }
+}
+
+.defi-mobile__protocol-copy {
+    margin: 16px 0 0;
+    color: var(--defi-muted);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+}
+
+.defi-mobile__protocol-copy--strong {
+    margin-top: 32px;
+    color: oklch(0.98 0 0 / 0.9);
+}
+
+.defi-mobile__secondary-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    margin-top: 24px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: var(--defi-gradient-cyan);
+    color: oklch(0.08 0.02 240);
+    box-shadow: var(--defi-shadow-cyan);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.defi-mobile__notice {
+    padding: 32px 20px;
+
+    button {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--defi-foreground);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        text-align: left;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: pointer;
+    }
+}
+
+.defi-mobile__footer {
+    padding: 32px 20px;
+    background: oklch(0.08 0.02 240 / 0.4);
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin: 24px 0 0;
+        color: var(--defi-muted);
+        font-size: 10px;
+        line-height: 1.4;
+        text-align: center;
+    }
+}
+
+@keyframes defi-mobile-pulse-glow {
+    0%,
+    100% {
+        box-shadow: 0 0 20px oklch(0.78 0.18 220 / 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 40px oklch(0.78 0.18 220 / 0.7);
+    }
+}
+
+@media (max-width: 374px) {
+    .defi-mobile__hero h1 span:first-child {
+        font-size: 32px;
+    }
+
+    .defi-mobile__hero h1 span:last-child {
+        font-size: 27px;
+    }
+
+    .defi-mobile__swap-card {
+        padding: 16px;
+    }
+
+    .defi-mobile__stat-card {
+        padding-right: 12px;
+        padding-left: 12px;
     }
 }

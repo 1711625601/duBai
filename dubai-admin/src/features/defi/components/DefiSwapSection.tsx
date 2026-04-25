@@ -83,7 +83,7 @@ const DefiSwapSection = () => {
                                 <div id="848_284" className="dubai-group-848_284">
                                     <div id="848_138" className="dubai-group-848_138">
                                         <p id="848_139" className="dubai-paragraph-848_139">
-                                            {'BNBY'}
+                                            {'BNB'}
                                         </p>
                                         <div id="848_140" className="dubai-vector-848_140"></div>
                                     </div>

@@ -1,0 +1,114 @@
+.dapp-mobile-chrome__header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 20px;
+    border-bottom: 1px solid oklch(0.25 0.05 230 / 0.4);
+    background: oklch(0.04 0.01 240 / 0.8);
+    backdrop-filter: blur(18px);
+}
+
+.dapp-mobile-chrome__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    text-decoration: none;
+
+    img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+
+    span {
+        color: oklch(0.98 0 0);
+        font-family: 'Orbitron', 'Rajdhani', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.18em;
+    }
+}
+
+.dapp-mobile-chrome__header-actions {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.dapp-mobile-chrome__connect {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, oklch(0.78 0.18 220), oklch(0.65 0.2 230));
+    color: oklch(0.08 0.02 240);
+    box-shadow: 0 8px 32px oklch(0.65 0.2 230 / 0.35);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.dapp-mobile-chrome__tabs {
+    width: 100%;
+    padding: 12px clamp(14px, 5.13vw, 40px);
+    border-bottom: 1px solid oklch(0.25 0.05 230 / 0.3);
+    background: oklch(0.04 0.01 240 / 0.6);
+    backdrop-filter: blur(14px);
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(2px, 2vw, 32px);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.dapp-mobile-chrome__tab {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(3px, 1vw, 8px);
+    min-height: clamp(26px, 7.7vw, 38px);
+    padding: 0 clamp(5px, 2vw, 16px);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    color: oklch(0.65 0.03 240);
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: clamp(9px, 2.85vw, 18px);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    text-decoration: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        color 0.2s ease,
+        background 0.2s ease;
+
+    img {
+        width: clamp(9px, 2.85vw, 20px);
+        height: clamp(9px, 2.85vw, 20px);
+        object-fit: contain;
+    }
+}
+
+.dapp-mobile-chrome__tab--active {
+    border-color: oklch(0.78 0.18 220 / 0.4);
+    background: oklch(0.08 0.02 240 / 1);
+    color: oklch(0.78 0.18 220);
+    box-shadow: 0 8px 32px oklch(0.65 0.2 230 / 0.35);
+}

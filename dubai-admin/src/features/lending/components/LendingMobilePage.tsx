@@ -1,184 +1,249 @@
-import MobilePageShell from '@/components/mobile/MobilePageShell';
+import { type SVGProps } from 'react';
+import { Link } from 'react-router';
 
+import DappMobileChrome from '@/features/dapp/components/DappMobileChrome';
 import '@/styles/lending-page-mobile.scss';
 
+import assetLogoEight from '@/assets/images/lending-asset-logo-eight.png';
 import assetLogoFive from '@/assets/images/lending-asset-logo-five.png';
+import assetLogoFour from '@/assets/images/lending-asset-logo-four.png';
+import assetLogoNine from '@/assets/images/lending-asset-logo-nine.png';
 import assetLogoOne from '@/assets/images/lending-asset-logo-one.png';
+import assetLogoSeven from '@/assets/images/lending-asset-logo-seven.png';
+import assetLogoSix from '@/assets/images/lending-asset-logo-six.png';
+import assetLogoTen from '@/assets/images/lending-asset-logo-ten.png';
 import assetLogoThree from '@/assets/images/lending-asset-logo-three.png';
 import assetLogoTwo from '@/assets/images/lending-asset-logo-two.png';
-import badgeCoin from '@/assets/images/lending-overview-badge-coin.png';
-import overviewCoin from '@/assets/images/lending-overview-brand-coin.png';
+import brandIcon from '@/assets/images/defi-header-brand-icon.png';
+import sghoIcon from '@/assets/images/lending-overview-badge-coin.png';
+import ethIcon from '@/assets/images/lending-overview-eth-icon.png';
 
-const metrics = [
-    { label: 'Total Market Size', value: '$33.56B' },
-    { label: 'Total Available', value: '$19.11B' },
-    { label: 'Total Borrows', value: '$13.45B' },
-    { label: 'Core Instance', value: 'V3' },
+type IconProps = SVGProps<SVGSVGElement> & {
+    size?: number;
+};
+
+const ChevronDownIcon = ({ size = 14, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <path
+            d="m6 9 6 6 6-6"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+        />
+    </svg>
+);
+
+const StarIcon = ({ size = 11, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <path
+            d="m12 3 2.7 5.48 6.05.88-4.38 4.27 1.03 6.02L12 16.81l-5.4 2.84 1.03-6.02-4.38-4.27 6.05-.88L12 3Z"
+            stroke="currentColor"
+            strokeLinejoin="round"
+            strokeWidth="1.8"
+        />
+    </svg>
+);
+
+const SearchIcon = ({ size = 13, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <path
+            d="m21 21-4.3-4.3M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeWidth="2"
+        />
+    </svg>
+);
+
+const ArrowUpDownIcon = ({ size = 9, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <path
+            d="m8 4-4 4m4-4 4 4M8 4v16m8 0 4-4m-4 4-4-4m4 4V4"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+        />
+    </svg>
+);
+
+const InfoIcon = ({ size = 9, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <path
+            d="M12 17v-6m0-4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+        />
+    </svg>
+);
+
+const summary = [
+    { label: 'Total market size', value: '$33.56B' },
+    { label: 'Total available', value: '$19.11B' },
+    { label: 'Total borrows', value: '$13.45B' },
 ];
 
-const assets = [
-    {
-        name: 'Ethereum',
-        symbol: 'ETH',
-        supplied: '2.93M / $6.41B',
-        supplyApy: '1.81%',
-        borrowed: '2.66M / $5.83B',
-        borrowApy: '2.35%',
-        icon: assetLogoOne,
-    },
-    {
-        name: 'Wrapped BTC',
-        symbol: 'WBTC',
-        supplied: '688.4K / $4.92B',
-        supplyApy: '1.27%',
-        borrowed: '418.2K / $2.98B',
-        borrowApy: '2.08%',
-        icon: assetLogoTwo,
-    },
-    {
-        name: 'USD Coin',
-        symbol: 'USDC',
-        supplied: '9.82B / $9.82B',
-        supplyApy: '3.41%',
-        borrowed: '5.60B / $5.60B',
-        borrowApy: '5.12%',
-        icon: assetLogoThree,
-    },
-    {
-        name: 'Tether',
-        symbol: 'USDT',
-        supplied: '8.64B / $8.64B',
-        supplyApy: '3.02%',
-        borrowed: '4.93B / $4.93B',
-        borrowApy: '4.78%',
-        icon: assetLogoFive,
-    },
+const assetIcons = [
+    assetLogoOne,
+    assetLogoTwo,
+    assetLogoThree,
+    assetLogoFour,
+    assetLogoFive,
+    assetLogoSix,
+    assetLogoSeven,
+    assetLogoEight,
+    assetLogoNine,
+    assetLogoTen,
 ];
 
-const LendingMobilePage = () => {
-    return (
-        <MobilePageShell
-            activePath="/dapp/lending"
-            eyebrow="Lending"
-            title="Core Assets"
-            description="The mobile lending view centers the Ethereum market summary, key yields, and a more scannable asset list."
-            headerAction={{ label: 'DeFi', to: '/dapp/defi' }}
-            primaryAction={{ label: 'View details', to: '/dapp/defi' }}
-            secondaryAction={{ label: 'Open register', to: '/register' }}
-            metrics={metrics}
-            heroMedia={
-                <div className="lending-mobile__hero-visual">
-                    <img
-                        className="lending-mobile__hero-coin"
-                        src={overviewCoin}
-                        alt="Lending overview coin"
-                    />
-                    <img
-                        className="lending-mobile__hero-badge"
-                        src={badgeCoin}
-                        alt="Overview badge coin"
-                    />
-                </div>
-            }
-        >
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Overview</p>
-                    <h2>Save with sGHO</h2>
-                    <p className="mobile-shell__section-copy">
-                        GHO yield with instant withdraws, adapted into a summary card that reads
-                        well on mobile.
-                    </p>
-                </div>
-                <article className="mobile-shell__panel">
-                    <div className="mobile-shell__list-topline">
-                        <strong>Total deposited</strong>
-                        <span className="mobile-shell__status-pill">Live</span>
-                    </div>
-                    <strong className="lending-mobile__big-number">$295.17M</strong>
-                    <div className="mobile-shell__info-row lending-mobile__apy-row">
-                        <div className="mobile-shell__table-cell">
-                            <strong>4.82%</strong>
-                            <span>APY</span>
+const assets = assetIcons.map((icon, index) => ({
+    name: 'Ethereum',
+    symbol: 'ETH',
+    supplied: '2.93M',
+    suppliedUsd: '$ 6.41B',
+    supplyApy: '1.81',
+    borrowed: '2.66M',
+    borrowedUsd: '$ 5.83B',
+    borrowApy: '2.35',
+    icon,
+    id: `eth-${index + 1}`,
+}));
+
+const LendingMobilePage = () => (
+    <div className="lending-mobile">
+        <DappMobileChrome activePath="/dapp/lending" />
+
+        <main className="lending-mobile__main">
+            <section className="lending-mobile__instance">
+                <div className="lending-mobile__instance-content">
+                    <div className="lending-mobile__instance-top">
+                        <div className="lending-mobile__instance-title-row">
+                            <span className="lending-mobile__eth-badge">
+                                <img src={ethIcon} alt="" aria-hidden="true" />
+                            </span>
+                            <div className="lending-mobile__instance-title">
+                                <h1>Core Instance</h1>
+                                <span>V3</span>
+                                <ChevronDownIcon />
+                            </div>
                         </div>
-                        <button
-                            className="mobile-shell__button mobile-shell__button--primary"
-                            type="button"
-                        >
-                            View details
+
+                        <button className="lending-mobile__favorite" type="button">
+                            <StarIcon />
+                            Favourite
                         </button>
                     </div>
-                </article>
-            </section>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Filters</p>
-                    <h2>Find an asset fast</h2>
-                </div>
-                <div className="mobile-shell__section-grid mobile-shell__section-grid--two">
-                    <div className="mobile-shell__field">
-                        <span className="mobile-shell__field-label">Category</span>
-                        <strong className="mobile-shell__field-value">All Categories</strong>
-                    </div>
-                    <div className="mobile-shell__field">
-                        <span className="mobile-shell__field-label">Search</span>
-                        <strong className="mobile-shell__field-value">
-                            Asset name, symbol, or address
-                        </strong>
-                    </div>
-                </div>
-            </section>
-
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Assets</p>
-                    <h2>Core asset list</h2>
-                    <p className="mobile-shell__section-copy">
-                        Rebuilt as individual cards so the table stays readable on smaller screens.
+                    <p className="lending-mobile__instance-copy">
+                        Main Ethereum market with the largest selection of assets and yield options
                     </p>
-                </div>
-                <div className="mobile-shell__list">
-                    {assets.map((asset) => (
-                        <article key={asset.symbol} className="mobile-shell__list-item">
-                            <div className="mobile-shell__list-topline">
-                                <div className="lending-mobile__asset-heading">
-                                    <span className="mobile-shell__icon-badge">
-                                        <img src={asset.icon} alt={`${asset.name} logo`} />
-                                    </span>
-                                    <div className="mobile-shell__table-cell">
-                                        <strong>{asset.name}</strong>
-                                        <span>{asset.symbol}</span>
-                                    </div>
-                                </div>
-                                <button className="mobile-shell__surface-button" type="button">
-                                    Details
-                                </button>
-                            </div>
-                            <div className="mobile-shell__section-grid mobile-shell__section-grid--two">
-                                <div className="mobile-shell__detail-card">
-                                    <strong>{asset.supplied}</strong>
-                                    <span>Total supplied</span>
-                                </div>
-                                <div className="mobile-shell__detail-card">
-                                    <strong>{asset.supplyApy}</strong>
-                                    <span>Supply APY</span>
-                                </div>
-                                <div className="mobile-shell__detail-card">
-                                    <strong>{asset.borrowed}</strong>
-                                    <span>Total borrowed</span>
-                                </div>
-                                <div className="mobile-shell__detail-card">
-                                    <strong>{asset.borrowApy}</strong>
-                                    <span>Borrow APY</span>
-                                </div>
-                            </div>
-                        </article>
-                    ))}
+
+                    <div className="lending-mobile__summary-grid">
+                        {summary.map((item) => (
+                            <article key={item.label}>
+                                <span>{item.label}</span>
+                                <strong>{item.value}</strong>
+                            </article>
+                        ))}
+                    </div>
                 </div>
             </section>
-        </MobilePageShell>
-    );
-};
+
+            <section className="lending-mobile__assets">
+                <h2>CORE ASSETS</h2>
+
+                <div className="lending-mobile__filters">
+                    <button className="lending-mobile__filter-button" type="button">
+                        All Categories
+                        <ChevronDownIcon />
+                    </button>
+                    <label className="lending-mobile__search">
+                        <SearchIcon />
+                        <input placeholder="Search asset name, symbol, or address" />
+                    </label>
+                </div>
+
+                <article className="lending-mobile__sgho-card">
+                    <div className="lending-mobile__sgho-head">
+                        <span className="lending-mobile__sgho-icon">
+                            <img src={sghoIcon} alt="" aria-hidden="true" />
+                        </span>
+                        <div>
+                            <strong>Save with sGHO</strong>
+                            <span>GHO yield with instant withdraws.</span>
+                        </div>
+                    </div>
+
+                    <div className="lending-mobile__sgho-stats">
+                        <div>
+                            <strong>$295.17M</strong>
+                            <span>Total deposited</span>
+                        </div>
+                        <div>
+                            <strong>
+                                4.82<span>%</span>
+                            </strong>
+                            <span>APY</span>
+                        </div>
+                        <button type="button">View details</button>
+                    </div>
+                </article>
+
+                <div className="lending-mobile__asset-head">
+                    <span>
+                        Asset <ArrowUpDownIcon />
+                    </span>
+                    <span>
+                        Supplied / APY <ArrowUpDownIcon />
+                    </span>
+                    <span>
+                        Borrow APY <InfoIcon />
+                    </span>
+                </div>
+
+                <ul className="lending-mobile__asset-list">
+                    {assets.map((asset) => (
+                        <li key={asset.id} className="lending-mobile__asset-row">
+                            <div className="lending-mobile__asset-name">
+                                <span>
+                                    <img src={asset.icon} alt="" aria-hidden="true" />
+                                </span>
+                                <div>
+                                    <strong>{asset.name}</strong>
+                                    <em>{asset.symbol}</em>
+                                </div>
+                            </div>
+
+                            <div className="lending-mobile__asset-supplied">
+                                <strong>{asset.supplied}</strong>
+                                <span>{asset.suppliedUsd}</span>
+                                <em>{asset.supplyApy}%</em>
+                            </div>
+
+                            <div className="lending-mobile__asset-borrow">
+                                <strong>
+                                    {asset.borrowApy}
+                                    <span>%</span>
+                                </strong>
+                                <button type="button">Details</button>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        </main>
+
+        <footer className="lending-mobile__footer">
+            <Link className="lending-mobile__footer-brand" to="/">
+                <img src={brandIcon} alt="GemChain logo" />
+                <span>GEM</span>
+            </Link>
+            <p>© 2026 GemChain. All rights reserved.</p>
+        </footer>
+    </div>
+);
 
 export default LendingMobilePage;
