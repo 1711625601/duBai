@@ -1,0 +1,55 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - link "GemChain logo GEM" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e7]
+      - generic [ref=e8]: GEM
+    - link "Connect" [ref=e10] [cursor=pointer]:
+      - /url: /register
+  - navigation "DApp navigation" [ref=e11]:
+    - list [ref=e12]:
+      - listitem [ref=e13]:
+        - link "DeFi" [ref=e14] [cursor=pointer]:
+          - /url: /dapp/defi
+          - img [ref=e15]
+          - generic [ref=e19]: DeFi
+      - listitem [ref=e20]:
+        - link "Lending" [ref=e21] [cursor=pointer]:
+          - /url: /dapp/lending
+          - img [ref=e22]
+          - generic [ref=e26]: Lending
+      - listitem [ref=e27]:
+        - link "Fun" [ref=e28] [cursor=pointer]:
+          - /url: /dapp/fun
+          - img [ref=e29]
+          - generic [ref=e33]: Fun
+      - listitem [ref=e34]:
+        - link "NFT" [ref=e35] [cursor=pointer]:
+          - /url: /dapp/nft
+          - img [ref=e36]
+          - generic [ref=e40]: NFT
+      - listitem [ref=e41]:
+        - link "My" [ref=e42] [cursor=pointer]:
+          - /url: /dapp/my
+          - img [ref=e43]
+          - generic [ref=e47]: My
+  - main [ref=e48]:
+    - region "暂未开放" [ref=e49]:
+      - article [ref=e50]:
+        - img [ref=e52]
+        - generic [ref=e56]: NFT
+        - heading "暂未开放" [level=1] [ref=e57]
+        - paragraph [ref=e58]: Marketplace and collectibles are being prepared.
+        - generic "NFT status" [ref=e59]:
+          - generic [ref=e60]:
+            - strong [ref=e61]: COMING
+            - generic [ref=e62]: Marketplace
+          - generic [ref=e63]:
+            - strong [ref=e64]: GEM
+            - generic [ref=e65]: Collectibles
+  - contentinfo [ref=e66]:
+    - link "GemChain logo GEM" [ref=e67] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e68]
+      - generic [ref=e69]: GEM
+    - paragraph [ref=e70]: © 2026 GemChain. All rights reserved.
