@@ -1,124 +1,98 @@
-import MobilePageShell from '@/components/mobile/MobilePageShell';
+import { Link } from 'react-router';
 
+import DappMobileChrome from '@/features/dapp/components/DappMobileChrome';
 import '@/styles/profile-page-mobile.scss';
 
+import brandIcon from '@/assets/images/defi-header-brand-icon.png';
 import avatarRing from '@/assets/images/profile-avatar-frame-ring.png';
-import headerAvatarRing from '@/assets/images/profile-header-avatar-ring.png';
 import copyIcon from '@/assets/images/profile-id-copy-icon.png';
 
 const accountDetails = [
     { label: 'Nickname', value: '116***@qq.com' },
-    { label: 'Wallet address', value: '0x23b1...98E4' },
+    { label: 'Wallet Address', value: '0x23b1...98E4' },
     { label: 'Birthday', value: 'June 20' },
-    { label: 'Change password', value: '***********' },
+    { label: 'Change Password', value: '***********' },
 ];
 
-const ProfileMobilePage = () => {
-    return (
-        <MobilePageShell
-            activePath="/dapp/my"
-            eyebrow="Personal Center"
-            title="Welcome back"
-            description="The profile mobile experience turns the desktop account board into stacked profile, balance, and settings cards."
-            headerAction={{ label: 'Home', to: '/' }}
-            primaryAction={{ label: 'Deposit', to: '/dapp/defi' }}
-            secondaryAction={{ label: 'Withdraw', to: '/dapp/lending' }}
-            metrics={[
-                { label: 'Account', value: '116***@qq.com' },
-                { label: 'Member ID', value: '827909863266554048' },
-            ]}
-            heroMedia={
-                <div className="profile-mobile__hero-visual">
-                    <img
-                        className="profile-mobile__hero-ring"
-                        src={headerAvatarRing}
-                        alt="Profile avatar ring"
-                    />
-                </div>
-            }
-        >
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Profile</p>
-                    <h2>Account information</h2>
-                </div>
-                <article className="mobile-shell__panel profile-mobile__summary-card">
+const ChevronRightIcon = () => (
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+            d="m9 18 6-6-6-6"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2.2"
+        />
+    </svg>
+);
+
+const ProfileMobilePage = () => (
+    <div className="profile-mobile">
+        <DappMobileChrome activePath="/dapp/my" />
+
+        <main className="profile-mobile__main">
+            <section className="profile-mobile__welcome-section">
+                <article className="profile-mobile__card profile-mobile__welcome-card">
+                    <div className="profile-mobile__avatar">
+                        <img src={avatarRing} alt="" aria-hidden="true" />
+                    </div>
+
                     <div className="profile-mobile__identity">
-                        <span className="profile-mobile__avatar">
-                            <img src={avatarRing} alt="Profile avatar" />
-                        </span>
-                        <div className="mobile-shell__table-cell">
-                            <strong>welcome, 116***@qq.com</strong>
-                            <span>Personal dashboard</span>
+                        <span>welcome,</span>
+                        <strong>116***@qq.com</strong>
+                        <div className="profile-mobile__member-id">
+                            <span>827909863266554048</span>
+                            <button aria-label="Copy member ID" type="button">
+                                <img src={copyIcon} alt="" aria-hidden="true" />
+                            </button>
                         </div>
                     </div>
-                    <div className="mobile-shell__info-row">
-                        <div className="mobile-shell__table-cell">
-                            <strong>827909863266554048</strong>
-                            <span>Member ID</span>
-                        </div>
-                        <button
-                            className="mobile-shell__surface-button profile-mobile__copy-button"
-                            type="button"
-                        >
-                            <img src={copyIcon} alt="Copy ID" />
-                        </button>
+
+                    <button className="profile-mobile__logout" type="button">
+                        log out
+                    </button>
+                </article>
+            </section>
+
+            <section className="profile-mobile__balance-section">
+                <article className="profile-mobile__card profile-mobile__balance-card">
+                    <span>Usdt</span>
+                    <strong>988830.93</strong>
+                    <div>
+                        <button type="button">Deposit</button>
+                        <button type="button">Withdraw</button>
                     </div>
                 </article>
-                <div className="mobile-shell__table">
-                    {accountDetails.map((detail) => (
-                        <article key={detail.label} className="mobile-shell__info-row">
-                            <div className="mobile-shell__table-cell">
-                                <strong>{detail.value}</strong>
-                                <span>{detail.label}</span>
+            </section>
+
+            <section className="profile-mobile__account-section">
+                <h1>Account Information</h1>
+
+                <div className="profile-mobile__card profile-mobile__info-card">
+                    {accountDetails.map((item) => (
+                        <article key={item.label}>
+                            <div>
+                                <span>{item.label}</span>
+                                <strong>{item.value}</strong>
                             </div>
-                            <button className="mobile-shell__surface-button" type="button">
+                            <button type="button">
                                 Revise
+                                <ChevronRightIcon />
                             </button>
                         </article>
                     ))}
                 </div>
             </section>
+        </main>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Wallet</p>
-                    <h2>Balance actions</h2>
-                </div>
-                <article className="mobile-shell__panel">
-                    <span className="mobile-shell__field-label">USDT balance</span>
-                    <strong className="profile-mobile__wallet-balance">988830.93</strong>
-                    <div className="mobile-shell__action-row mobile-shell__section-grid--two">
-                        <button
-                            className="mobile-shell__button mobile-shell__button--primary"
-                            type="button"
-                        >
-                            Deposit
-                        </button>
-                        <button
-                            className="mobile-shell__button mobile-shell__button--ghost"
-                            type="button"
-                        >
-                            Withdraw
-                        </button>
-                    </div>
-                </article>
-            </section>
-
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Session</p>
-                    <h2>Leave safely</h2>
-                </div>
-                <button
-                    className="mobile-shell__button mobile-shell__button--primary"
-                    type="button"
-                >
-                    Log out
-                </button>
-            </section>
-        </MobilePageShell>
-    );
-};
+        <footer className="profile-mobile__footer">
+            <Link className="profile-mobile__footer-brand" to="/">
+                <img src={brandIcon} alt="GemChain logo" />
+                <span>GEM</span>
+            </Link>
+            <p>© 2026 GemChain. All rights reserved.</p>
+        </footer>
+    </div>
+);
 
 export default ProfileMobilePage;

@@ -1,0 +1,89 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - link "GemChain logo GEM" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e7]
+      - generic [ref=e8]: GEM
+    - link "Connect" [ref=e10] [cursor=pointer]:
+      - /url: /register
+  - navigation "DApp navigation" [ref=e11]:
+    - list [ref=e12]:
+      - listitem [ref=e13]:
+        - link "DeFi" [ref=e14] [cursor=pointer]:
+          - /url: /dapp/defi
+          - img [ref=e15]
+          - generic [ref=e19]: DeFi
+      - listitem [ref=e20]:
+        - link "Lending" [ref=e21] [cursor=pointer]:
+          - /url: /dapp/lending
+          - img [ref=e22]
+          - generic [ref=e26]: Lending
+      - listitem [ref=e27]:
+        - link "Fun" [ref=e28] [cursor=pointer]:
+          - /url: /dapp/fun
+          - img [ref=e29]
+          - generic [ref=e33]: Fun
+      - listitem [ref=e34]:
+        - link "NFT" [ref=e35] [cursor=pointer]:
+          - /url: /dapp/nft
+          - img [ref=e36]
+          - generic [ref=e40]: NFT
+      - listitem [ref=e41]:
+        - link "My" [ref=e42] [cursor=pointer]:
+          - /url: /dapp/my
+          - img [ref=e43]
+          - generic [ref=e47]: My
+  - main [ref=e48]:
+    - article [ref=e50]:
+      - img [ref=e52]
+      - generic [ref=e53]:
+        - generic [ref=e54]: welcome,
+        - strong [ref=e55]: 116***@qq.com
+        - generic [ref=e56]:
+          - generic [ref=e57]: "827909863266554048"
+          - button "Copy member ID" [ref=e58] [cursor=pointer]:
+            - img [ref=e59]
+      - button "log out" [ref=e60] [cursor=pointer]
+    - article [ref=e62]:
+      - generic [ref=e63]: Usdt
+      - strong [ref=e64]: "988830.93"
+      - generic [ref=e65]:
+        - button "Deposit" [ref=e66] [cursor=pointer]
+        - button "Withdraw" [ref=e67] [cursor=pointer]
+    - generic [ref=e68]:
+      - heading "Account Information" [level=1] [ref=e69]
+      - generic [ref=e70]:
+        - article [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: Nickname
+            - strong [ref=e74]: 116***@qq.com
+          - button "Revise" [ref=e75] [cursor=pointer]:
+            - text: Revise
+            - img [ref=e76]
+        - article [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: Wallet Address
+            - strong [ref=e81]: 0x23b1...98E4
+          - button "Revise" [ref=e82] [cursor=pointer]:
+            - text: Revise
+            - img [ref=e83]
+        - article [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: Birthday
+            - strong [ref=e88]: June 20
+          - button "Revise" [ref=e89] [cursor=pointer]:
+            - text: Revise
+            - img [ref=e90]
+        - article [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: Change Password
+            - strong [ref=e95]: "***********"
+          - button "Revise" [ref=e96] [cursor=pointer]:
+            - text: Revise
+            - img [ref=e97]
+  - contentinfo [ref=e99]:
+    - link "GemChain logo GEM" [ref=e100] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e101]
+      - generic [ref=e102]: GEM
+    - paragraph [ref=e103]: © 2026 GemChain. All rights reserved.

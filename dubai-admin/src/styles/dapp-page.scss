@@ -82,9 +82,11 @@
     white-space: nowrap;
 }
 
-.dapp-chrome__nav-link img {
+.dapp-chrome__nav-link img,
+.dapp-chrome__nav-link svg {
     width: 20px;
     height: 20px;
+    flex: 0 0 auto;
     object-fit: contain;
 }
 

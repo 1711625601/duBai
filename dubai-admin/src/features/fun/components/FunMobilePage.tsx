@@ -1,56 +1,60 @@
-import MobilePageShell from '@/components/mobile/MobilePageShell';
+import { Link } from 'react-router';
 
+import DappMobileChrome from '@/features/dapp/components/DappMobileChrome';
 import '@/styles/fun-page-mobile.scss';
 
+import brandIcon from '@/assets/images/defi-header-brand-icon.png';
+import actionArrowIcon from '@/assets/images/fun-action-arrow.png';
 import campaignIllustration from '@/assets/images/fun-campaign-card-illustration.png';
-import completeIconOne from '@/assets/images/fun-ranking-complete-icon-one.png';
-import completeIconTwo from '@/assets/images/fun-ranking-complete-icon-two.png';
+import copyIconOne from '@/assets/images/fun-referral-copy-icon-one.png';
+import copyIconTwo from '@/assets/images/fun-referral-copy-icon-two.png';
+import primaryArrowIcon from '@/assets/images/fun-primary-button-arrow.png';
+import searchIcon from '@/assets/images/fun-search-icon.png';
 import shareLinkIcon from '@/assets/images/fun-share-link-icon.png';
 
-const metrics = [
-    { label: 'Total Earned XP', value: '0' },
-    { label: 'Total Earned AP', value: '0' },
-    { label: 'Referred Users', value: '0' },
-    { label: 'Reward Rate', value: '10%' },
+const referralStats = [
+    { value: '0', label: 'Total Earned XP' },
+    { value: '0', label: 'Total Earned AP' },
+    { value: '0', label: 'Total Referred Users' },
+    { value: '10%', label: 'Reward Rate', highlight: true },
 ];
 
 const howItWorks = [
     {
-        step: '01',
-        title: 'Share your link',
-        description:
-            'Copy and share your unique referral link to bring new users into the campaign.',
+        step: '1',
+        title: 'SHARE YOUR LINK',
+        description: 'Copy and share your unique referral link',
     },
     {
-        step: '02',
-        title: 'Friends join',
-        description:
-            'They sign up and start earning through the GemChain ecosystem using your code.',
+        step: '2',
+        title: 'FRIENDS JOIN',
+        description: 'They sign up and start earning using your link',
     },
-    {
-        step: '03',
-        title: 'Earn rewards',
-        description:
-            'Receive 10% of the XP and AP that your referrals generate while participating.',
-    },
+    { step: '3', title: 'EARN REWARDS', description: 'Get 10% of their XP & AP earnings' },
 ];
 
 const campaigns = [
     {
-        title: '$RIVER is live on Hyperliquid',
-        description: 'Trade and hold to earn from a $3,000 RIVER bonus and 300K River points.',
-        status: '13 days left',
+        title: '$RIVER Is Live On Hyperliquid',
+        description: 'Trade and hold to earn from a $3,000 RIVER + 300K RIVER pts.',
+        badge: '13 days left',
     },
     {
         title: 'S4 Airdrop',
         description: 'Earn by staking $RIVER and using satUSD across ecosystems.',
-        status: '24 days left',
+        badge: '24 days left',
     },
     {
         title: '$RIVER Staking',
-        description: 'Stake $RIVER and claim your rewards weekly through the campaign dashboard.',
-        status: 'Dec 20~',
+        description: 'Stake $RIVER and claim your rewards weekly.',
+        badge: 'Dec 20-',
     },
+];
+
+const tasks = [
+    { id: 'discord-go', task: 'Joining and linking Discord', state: 'go', award: '983.50' },
+    { id: 'discord-done-one', task: 'Joining and linking Discord', state: 'done', award: '983.50' },
+    { id: 'discord-done-two', task: 'Joining and linking Discord', state: 'done', award: '983.50' },
 ];
 
 const rankings = [
@@ -60,174 +64,204 @@ const rankings = [
     { rank: '4', account: '1165959102@qq.com', weekly: '740.30', total: '1220.50' },
 ];
 
-const tasks = [
-    { task: 'Join and link Discord', activity: 'Social onboarding', award: '983.50', done: true },
-    { task: 'Invite 3 friends', activity: 'Growth activation', award: '983.50', done: true },
-    {
-        task: 'Complete staking tutorial',
-        activity: 'Protocol education',
-        award: '983.50',
-        done: false,
-    },
-];
+const CompleteIcon = () => (
+    <svg
+        className="fun-mobile__complete-icon"
+        width="10"
+        height="10"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <path
+            d="m9 12 2 2 4-4"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+        />
+        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+    </svg>
+);
 
-const FunMobilePage = () => {
-    return (
-        <MobilePageShell
-            activePath="/dapp/fun"
-            eyebrow="Fun"
-            title="Referral Program"
-            description="Invite friends and earn XP and AP through stacked campaigns, rankings, and quick participation tasks."
-            headerAction={{ label: 'Register', to: '/register' }}
-            primaryAction={{ label: 'Open referral', to: '/register' }}
-            secondaryAction={{ label: 'View DeFi', to: '/dapp/defi' }}
-            metrics={metrics}
-            heroMedia={
-                <div className="fun-mobile__hero-visual">
-                    <img src={campaignIllustration} alt="Referral campaign illustration" />
-                </div>
-            }
-        >
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Share</p>
-                    <h2>Your referral link</h2>
-                    <p className="mobile-shell__section-copy">
-                        The mobile version keeps the original share, stats, and guide flow in a
-                        stacked card layout.
-                    </p>
-                </div>
-                <article className="mobile-shell__panel">
-                    <span className="mobile-shell__field-label">Link</span>
-                    <strong className="mobile-shell__field-value">
-                        https://app.termmax.ts.finance/alpha
-                    </strong>
-                    <div className="mobile-shell__action-row mobile-shell__section-grid--two">
-                        <button
-                            className="mobile-shell__button mobile-shell__button--primary"
-                            type="button"
-                        >
+const FunMobilePage = () => (
+    <div className="fun-mobile">
+        <DappMobileChrome activePath="/dapp/fun" />
+
+        <main className="fun-mobile__main">
+            <section className="fun-mobile__referral">
+                <div className="fun-mobile__referral-content">
+                    <h1>REFERRAL PROGRAM</h1>
+                    <p>Invite friends and earn XP & AP when they participate</p>
+
+                    <article className="fun-mobile__card fun-mobile__share-card">
+                        <span className="fun-mobile__eyebrow">SHARE</span>
+                        <h2>Your Referral Link</h2>
+
+                        <div className="fun-mobile__field-row">
+                            <input readOnly value="https://app.gemmax.is.finance/Alpha" />
+                            <button aria-label="Copy referral link" type="button">
+                                <img src={copyIconOne} alt="" aria-hidden="true" />
+                            </button>
+                        </div>
+
+                        <div className="fun-mobile__field-row">
+                            <input readOnly value="Code: CRCR68QX" />
+                            <button aria-label="Copy referral code" type="button">
+                                <img src={copyIconTwo} alt="" aria-hidden="true" />
+                            </button>
+                        </div>
+
+                        <button className="fun-mobile__copy-action" type="button">
+                            <img src={shareLinkIcon} alt="" aria-hidden="true" />
                             Copy Link
                         </button>
-                        <button className="mobile-shell__surface-button" type="button">
-                            Code: CRCR6BQX
-                        </button>
-                    </div>
-                    <div className="mobile-shell__icon-row">
-                        <span className="mobile-shell__icon-badge">
-                            <img src={shareLinkIcon} alt="Share link icon" />
-                        </span>
-                        <p className="mobile-shell__card-copy">
-                            Statistics may have a 1-2 hour delay while campaign activity syncs.
-                        </p>
-                    </div>
-                </article>
-            </section>
+                    </article>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Guide</p>
-                    <h2>How it works</h2>
-                </div>
-                <div className="mobile-shell__list">
-                    {howItWorks.map((item) => (
-                        <article key={item.step} className="mobile-shell__list-item">
-                            <div className="mobile-shell__list-topline">
-                                <span className="mobile-shell__list-index">{item.step}</span>
-                                <strong>{item.title}</strong>
-                            </div>
-                            <p className="mobile-shell__card-copy">{item.description}</p>
-                        </article>
-                    ))}
-                </div>
-            </section>
+                    <article className="fun-mobile__card fun-mobile__stats-card">
+                        <span className="fun-mobile__eyebrow">STATS</span>
+                        <h2>Your Referrals</h2>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Campaigns</p>
-                    <h2>Featured opportunities</h2>
-                </div>
-                <div className="mobile-shell__list">
-                    {campaigns.map((campaign, index) => (
-                        <article key={campaign.title} className="mobile-shell__list-item">
-                            {index === 0 ? (
-                                <div className="fun-mobile__campaign-media">
-                                    <img src={campaignIllustration} alt="Campaign visual" />
+                        <div className="fun-mobile__stats-grid">
+                            {referralStats.map((stat) => (
+                                <div
+                                    className={
+                                        stat.highlight
+                                            ? 'fun-mobile__stat fun-mobile__stat--highlight'
+                                            : 'fun-mobile__stat'
+                                    }
+                                    key={stat.label}
+                                >
+                                    <strong>{stat.value}</strong>
+                                    <span>{stat.label}</span>
                                 </div>
-                            ) : null}
-                            <div className="mobile-shell__list-topline">
-                                <strong>{campaign.title}</strong>
-                                <span className="mobile-shell__status-pill">{campaign.status}</span>
-                            </div>
-                            <p className="mobile-shell__card-copy">{campaign.description}</p>
-                        </article>
-                    ))}
-                </div>
-            </section>
+                            ))}
+                        </div>
+                    </article>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Rankings</p>
-                    <h2>Weekly rewards board</h2>
-                </div>
-                <div className="mobile-shell__table">
-                    {rankings.map((entry, index) => (
-                        <article key={entry.rank} className="mobile-shell__table-row">
-                            <div className="mobile-shell__table-cell">
-                                <strong>#{entry.rank}</strong>
-                                <span>{entry.account}</span>
-                            </div>
-                            <div className="mobile-shell__table-cell">
-                                <strong>{entry.weekly}</strong>
-                                <span>Weekly</span>
-                            </div>
-                            <div className="mobile-shell__table-cell">
-                                <strong>{entry.total}</strong>
-                                <span>Total</span>
-                            </div>
-                            <span className="mobile-shell__icon-badge">
-                                <img
-                                    src={index % 2 === 0 ? completeIconOne : completeIconTwo}
-                                    alt="Ranking status icon"
-                                />
-                            </span>
-                        </article>
-                    ))}
-                </div>
-            </section>
+                    <article className="fun-mobile__card fun-mobile__guide-card">
+                        <span className="fun-mobile__eyebrow">GUIDE</span>
+                        <h2>How It Works</h2>
 
-            <section className="mobile-shell__section">
-                <div className="mobile-shell__section-head">
-                    <p className="mobile-shell__section-tag">Tasks</p>
-                    <h2>Requirements and tasks</h2>
-                </div>
-                <div className="mobile-shell__table">
-                    {tasks.map((task) => (
-                        <article key={task.task} className="mobile-shell__table-row">
-                            <div className="mobile-shell__table-cell">
-                                <strong>{task.task}</strong>
-                                <span>{task.activity}</span>
-                            </div>
-                            <div className="mobile-shell__table-cell">
-                                <strong>{task.award}</strong>
-                                <span>Award</span>
-                            </div>
-                            <button
-                                className={
-                                    task.done
-                                        ? 'mobile-shell__surface-button fun-mobile__done-button'
-                                        : 'mobile-shell__button mobile-shell__button--primary'
-                                }
-                                type="button"
-                            >
-                                {task.done ? 'Completed' : 'Go'}
+                        <ul>
+                            {howItWorks.map((item) => (
+                                <li key={item.step}>
+                                    <span>{item.step}</span>
+                                    <div>
+                                        <strong>{item.title}</strong>
+                                        <p>{item.description}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+
+                    <article className="fun-mobile__card fun-mobile__history-card">
+                        <span className="fun-mobile__eyebrow">HISTORY</span>
+                        <div className="fun-mobile__history-head">
+                            <h2>Referral History</h2>
+                            <button type="button">
+                                <img src={searchIcon} alt="" aria-hidden="true" />
+                                Search
                             </button>
-                        </article>
-                    ))}
+                        </div>
+                        <p>*The statistics will have 1-2 hours delay.</p>
+                        <div className="fun-mobile__empty-state">No referrals found</div>
+                    </article>
                 </div>
             </section>
-        </MobilePageShell>
-    );
-};
+
+            <section className="fun-mobile__section fun-mobile__campaigns">
+                <div className="fun-mobile__section-head">
+                    <h2>CAMPAIGNS</h2>
+                    <button type="button">
+                        See All
+                        <img src={actionArrowIcon} alt="" aria-hidden="true" />
+                    </button>
+                </div>
+
+                <ul className="fun-mobile__campaign-list">
+                    {campaigns.map((campaign) => (
+                        <li className="fun-mobile__campaign-card" key={campaign.title}>
+                            <div className="fun-mobile__campaign-media">
+                                <img src={campaignIllustration} alt="" aria-hidden="true" />
+                            </div>
+                            <div className="fun-mobile__campaign-body">
+                                <strong>{campaign.title}</strong>
+                                <p>{campaign.description}</p>
+                                <span>{campaign.badge}</span>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+
+            <section className="fun-mobile__section fun-mobile__tasks">
+                <h2>REQUIREMENTS AND TASKS</h2>
+
+                <div className="fun-mobile__table-card">
+                    <div className="fun-mobile__task-head">
+                        <span>Task</span>
+                        <span>Activity</span>
+                        <span>Award</span>
+                    </div>
+                    <ul>
+                        {tasks.map((task) => (
+                            <li key={task.id}>
+                                <span>{task.task}</span>
+                                <div>
+                                    {task.state === 'go' ? (
+                                        <button className="fun-mobile__go-button" type="button">
+                                            go
+                                            <img src={primaryArrowIcon} alt="" aria-hidden="true" />
+                                        </button>
+                                    ) : (
+                                        <span className="fun-mobile__completed-pill">
+                                            <CompleteIcon />
+                                            Completed
+                                        </span>
+                                    )}
+                                </div>
+                                <strong>{task.award}</strong>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
+            <section className="fun-mobile__section fun-mobile__rankings">
+                <h2>RANKINGS</h2>
+                <p>Invite friends and earn XP & AP when they participate</p>
+
+                <div className="fun-mobile__table-card">
+                    <div className="fun-mobile__ranking-head">
+                        <span>Rank</span>
+                        <span>Account</span>
+                        <span>Weekly</span>
+                        <span>Total</span>
+                    </div>
+                    <ul>
+                        {rankings.map((entry) => (
+                            <li key={entry.rank}>
+                                <strong>{entry.rank}</strong>
+                                <span>{entry.account}</span>
+                                <span>{entry.weekly}</span>
+                                <em>{entry.total}</em>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer className="fun-mobile__footer">
+            <Link className="fun-mobile__footer-brand" to="/">
+                <img src={brandIcon} alt="GemChain logo" />
+                <span>GEM</span>
+            </Link>
+            <p>© 2026 GemChain. All rights reserved.</p>
+        </footer>
+    </div>
+);
 
 export default FunMobilePage;

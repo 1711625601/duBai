@@ -1,15 +1,15 @@
 import { NavLink } from 'react-router';
 
-import brandIcon from '@/assets/images/defi-header-brand-icon.png';
-import defiIcon from '@/assets/images/defi-header-defi-icon.png';
-import nftIcon from '@/assets/images/defi-header-nft-icon.png';
+import DappNavIcon, { type DappNavIconName } from '@/features/dapp/components/DappNavIcon';
 
-const navItems = [
-    { label: 'DeFi', to: '/dapp/defi', icon: defiIcon },
-    { label: 'Lending', to: '/dapp/lending' },
-    { label: 'Fun', to: '/dapp/fun' },
-    { label: 'NFT', to: '/dapp/nft', icon: nftIcon },
-    { label: 'My', to: '/dapp/my' },
+import brandIcon from '@/assets/images/defi-header-brand-icon.png';
+
+const navItems: Array<{ label: string; to: string; icon: DappNavIconName }> = [
+    { label: 'DeFi', to: '/dapp/defi', icon: 'defi' },
+    { label: 'Lending', to: '/dapp/lending', icon: 'lending' },
+    { label: 'Fun', to: '/dapp/fun', icon: 'fun' },
+    { label: 'NFT', to: '/dapp/nft', icon: 'nft' },
+    { label: 'My', to: '/dapp/my', icon: 'my' },
 ];
 
 const DappChrome = () => {
@@ -34,7 +34,7 @@ const DappChrome = () => {
                         }
                         to={item.to}
                     >
-                        {item.icon ? <img src={item.icon} alt="" aria-hidden="true" /> : null}
+                        <DappNavIcon name={item.icon} />
                         <span>{item.label}</span>
                     </NavLink>
                 ))}

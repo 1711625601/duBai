@@ -99,9 +99,11 @@
         color 0.2s ease,
         background 0.2s ease;
 
-    img {
+    img,
+    svg {
         width: clamp(9px, 2.85vw, 20px);
         height: clamp(9px, 2.85vw, 20px);
+        flex: 0 0 auto;
         object-fit: contain;
     }
 }
