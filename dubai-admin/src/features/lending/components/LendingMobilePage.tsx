@@ -58,12 +58,12 @@ const assets = [
 const LendingMobilePage = () => {
     return (
         <MobilePageShell
-            activePath="/lending"
+            activePath="/dapp/lending"
             eyebrow="Lending"
             title="Core Assets"
             description="The mobile lending view centers the Ethereum market summary, key yields, and a more scannable asset list."
-            headerAction={{ label: 'DeFi', to: '/defi' }}
-            primaryAction={{ label: 'View details', to: '/defi' }}
+            headerAction={{ label: 'DeFi', to: '/dapp/defi' }}
+            primaryAction={{ label: 'View details', to: '/dapp/defi' }}
             secondaryAction={{ label: 'Open register', to: '/register' }}
             metrics={metrics}
             heroMedia={

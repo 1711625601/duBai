@@ -38,13 +38,13 @@ const swapCards = [
 const DefiMobilePage = () => {
     return (
         <MobilePageShell
-            activePath="/defi"
+            activePath="/dapp/defi"
             eyebrow="DeFi"
             title={"Everyone's Favorite DEX"}
             description="Trade crypto instantly across 10 chains with a faster mobile-first flow for swaps, routing, and protocol visibility."
-            headerAction={{ label: 'Profile', to: '/profile' }}
+            headerAction={{ label: 'My', to: '/dapp/my' }}
             primaryAction={{ label: 'Connect wallet', to: '/register' }}
-            secondaryAction={{ label: 'Explore Fun', to: '/fun' }}
+            secondaryAction={{ label: 'Explore Fun', to: '/dapp/fun' }}
             metrics={metrics}
             heroMedia={
                 <div className="defi-mobile__hero-visual">

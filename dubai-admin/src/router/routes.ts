@@ -1,9 +1,14 @@
-import DefiPage from '@/views/DefiPage';
-import FunPage from '@/views/FunPage';
+import { createElement } from 'react';
+import { Navigate } from 'react-router';
+
+import DappPage from '@/views/DappPage';
 import HomePage from '@/views/HomePage';
-import LendingPage from '@/views/LendingPage';
-import ProfilePage from '@/views/ProfilePage';
 import RegisterPage from '@/views/RegisterPage';
+
+const LegacyDefiRoute = () => createElement(Navigate, { to: '/dapp/defi', replace: true });
+const LegacyFunRoute = () => createElement(Navigate, { to: '/dapp/fun', replace: true });
+const LegacyLendingRoute = () => createElement(Navigate, { to: '/dapp/lending', replace: true });
+const LegacyProfileRoute = () => createElement(Navigate, { to: '/dapp/my', replace: true });
 
 export const routes = [
     {
@@ -11,16 +16,20 @@ export const routes = [
         component: HomePage,
     },
     {
+        path: '/dapp/*',
+        component: DappPage,
+    },
+    {
         path: '/defi',
-        component: DefiPage,
+        component: LegacyDefiRoute,
     },
     {
         path: '/fun',
-        component: FunPage,
+        component: LegacyFunRoute,
     },
     {
         path: '/lending',
-        component: LendingPage,
+        component: LegacyLendingRoute,
     },
     {
         path: '/register',
@@ -28,6 +37,6 @@ export const routes = [
     },
     {
         path: '/profile',
-        component: ProfilePage,
+        component: LegacyProfileRoute,
     },
 ];

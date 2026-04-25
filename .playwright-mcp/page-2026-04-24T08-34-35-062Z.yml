@@ -1,0 +1,55 @@
+- generic [ref=e7]:
+  - banner "DApp navigation" [ref=e8]:
+    - link "GemChain logo GEM" [ref=e11] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e12]
+      - generic [ref=e13]: GEM
+    - navigation "DApp sections" [ref=e14]:
+      - link "DeFi" [ref=e15] [cursor=pointer]:
+        - /url: /dapp/defi
+        - img [ref=e16]
+        - generic [ref=e17]: DeFi
+      - link "Fun" [ref=e18] [cursor=pointer]:
+        - /url: /dapp/fun
+        - generic [ref=e19]: Fun
+      - link "NFT" [ref=e20] [cursor=pointer]:
+        - /url: /dapp/nft
+        - img [ref=e21]
+        - generic [ref=e22]: NFT
+      - link "My" [ref=e23] [cursor=pointer]:
+        - /url: /dapp/my
+        - generic [ref=e24]: My
+    - button "connect" [ref=e25] [cursor=pointer]
+  - generic [ref=e27]:
+    - paragraph [ref=e30]: Account information
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: 116***@qq.com
+        - paragraph [ref=e34]: Nickname
+      - paragraph [ref=e37]: Revise
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: 0x23b1...98E4
+        - paragraph [ref=e42]: Wallet address
+      - paragraph [ref=e45]: Revise
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: June 20
+        - paragraph [ref=e50]: Birthday
+      - paragraph [ref=e53]: Revise
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - paragraph [ref=e57]: "***********"
+        - paragraph [ref=e58]: Change Password
+      - paragraph [ref=e61]: Revise
+  - generic [ref=e66]:
+    - paragraph [ref=e67]: welcome，116***@qq.com
+    - paragraph [ref=e69]: "827909863266554048"
+  - generic [ref=e71]:
+    - generic [ref=e74]:
+      - paragraph [ref=e75]: usdt
+      - paragraph [ref=e76]: "988830.93"
+    - generic [ref=e77]:
+      - paragraph [ref=e81]: Deposit
+      - paragraph [ref=e84]: Withdraw
+  - paragraph [ref=e87]: log out

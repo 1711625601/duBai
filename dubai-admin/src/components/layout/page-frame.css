@@ -29,6 +29,8 @@
 .page-frame-shell--mobile {
     height: 100%;
     width: 100%;
+    min-width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
 }

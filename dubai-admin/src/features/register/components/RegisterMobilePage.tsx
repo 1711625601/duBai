@@ -21,8 +21,8 @@ const RegisterMobilePage = () => {
             title="Join GemChain"
             description="The mobile onboarding flow keeps the dark modal feeling from desktop while simplifying the steps into a clear stacked form."
             headerAction={{ label: 'Home', to: '/' }}
-            primaryAction={{ label: 'Register now', to: '/profile' }}
-            secondaryAction={{ label: 'Profile', to: '/profile' }}
+            primaryAction={{ label: 'Register now', to: '/dapp/my' }}
+            secondaryAction={{ label: 'Profile', to: '/dapp/my' }}
             heroMedia={
                 <div className="register-mobile__hero-visual">
                     <img

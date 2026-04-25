@@ -9,18 +9,20 @@ import '@/styles/home-page.scss';
 
 const HomePage = () => {
     return (
-        <PageFrame
-            frameId="584_300"
-            frameClassName="dubai-frame-584_300"
-            designHeight={6260}
-            mobileFallback={<HomeMobilePage />}
-        >
-            <HomeIntroSections />
-            <HomeChrome />
-            <HomeCommunitySections />
-            <HomeTimelineSection />
-            <HomeAboutSection />
-        </PageFrame>
+        <div className="home-page-route">
+            <PageFrame
+                frameId="584_300"
+                frameClassName="dubai-frame-584_300"
+                designHeight={6260}
+                mobileFallback={<HomeMobilePage />}
+            >
+                <HomeIntroSections />
+                <HomeChrome />
+                <HomeCommunitySections />
+                <HomeTimelineSection />
+                <HomeAboutSection />
+            </PageFrame>
+        </div>
     );
 };
 

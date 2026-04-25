@@ -3,6 +3,12 @@
     width: 100%;
     overflow: auto;
 }
+
+.home-page-route {
+    height: 100%;
+    width: 100%;
+}
+
 .dubai-frame-584_300 {
     width: 100%;
     height: 6260px;
@@ -22,6 +28,18 @@
     background-repeat: no-repeat;
     background-image: url(@/assets/images/shared-gem-coin.png);
 }
+
+@media (min-width: 1986px) {
+    .home-page-route .page-frame-shell__scroll {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .home-page-route .dubai-frame-584_300 {
+        overflow: visible;
+    }
+}
+
 .dubai-rectangle-584_303 {
     width: 1920px;
     height: 80px;
@@ -1003,9 +1021,12 @@
 .dubai-group-584_410 {
     width: 372px;
     height: 64px;
+    display: block;
     position: absolute;
     left: 0px;
     top: 471px;
+    cursor: pointer;
+    text-decoration: none;
 }
 .dubai-group-584_411 {
     width: 372px;
@@ -1532,18 +1553,21 @@
     background-image: url(@/assets/images/home-news-side-card-top-cover.png);
 }
 .dubai-paragraph-584_459 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
     font-weight: 400;
     letter-spacing: 0em;
+    line-height: 1.3;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     width: auto;
+    max-width: 606px;
     height: auto;
     position: absolute;
     left: 24px;
     top: 228px;
-    white-space: pre;
+    white-space: nowrap;
+    overflow: hidden;
     flex-grow: 0;
 }
 .dubai-group-584_460 {
@@ -1618,18 +1642,21 @@
     background-image: url(@/assets/images/home-news-side-card-bottom-cover.png);
 }
 .dubai-paragraph-584_466 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Alibaba PuHuiTi 3.0-55 Regular';
     font-weight: 400;
     letter-spacing: 0em;
+    line-height: 1.3;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     width: auto;
+    max-width: 606px;
     height: auto;
     position: absolute;
     left: 24px;
     top: 228px;
-    white-space: pre;
+    white-space: nowrap;
+    overflow: hidden;
     flex-grow: 0;
 }
 .dubai-group-584_467 {

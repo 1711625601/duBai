@@ -74,13 +74,13 @@ const tasks = [
 const FunMobilePage = () => {
     return (
         <MobilePageShell
-            activePath="/fun"
+            activePath="/dapp/fun"
             eyebrow="Fun"
             title="Referral Program"
             description="Invite friends and earn XP and AP through stacked campaigns, rankings, and quick participation tasks."
             headerAction={{ label: 'Register', to: '/register' }}
             primaryAction={{ label: 'Open referral', to: '/register' }}
-            secondaryAction={{ label: 'View DeFi', to: '/defi' }}
+            secondaryAction={{ label: 'View DeFi', to: '/dapp/defi' }}
             metrics={metrics}
             heroMedia={
                 <div className="fun-mobile__hero-visual">

@@ -16,13 +16,13 @@ const accountDetails = [
 const ProfileMobilePage = () => {
     return (
         <MobilePageShell
-            activePath="/profile"
+            activePath="/dapp/my"
             eyebrow="Personal Center"
             title="Welcome back"
             description="The profile mobile experience turns the desktop account board into stacked profile, balance, and settings cards."
             headerAction={{ label: 'Home', to: '/' }}
-            primaryAction={{ label: 'Deposit', to: '/defi' }}
-            secondaryAction={{ label: 'Withdraw', to: '/lending' }}
+            primaryAction={{ label: 'Deposit', to: '/dapp/defi' }}
+            secondaryAction={{ label: 'Withdraw', to: '/dapp/lending' }}
             metrics={[
                 { label: 'Account', value: '116***@qq.com' },
                 { label: 'Member ID', value: '827909863266554048' },

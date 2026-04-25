@@ -1,11 +1,9 @@
-import { Route, Routes, useLocation } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { routes } from '../routes';
 
 const RouteRenderer = () => {
-    const location = useLocation();
-
     return (
-        <Routes location={location} key={location.pathname}>
+        <Routes>
             {routes.map((route) => (
                 <Route key={route.path} path={route.path} element={<route.component />} />
             ))}

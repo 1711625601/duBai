@@ -20,7 +20,7 @@ type MobilePageShellProps = {
     activePath: string;
     eyebrow: string;
     title: string;
-    description: string;
+    description?: string;
     headerAction?: MobilePageAction;
     primaryAction?: MobilePageAction;
     secondaryAction?: MobilePageAction;
@@ -30,12 +30,11 @@ type MobilePageShellProps = {
 };
 
 const navItems = [
-    { label: 'Home', to: '/' },
-    { label: 'DeFi', to: '/defi' },
-    { label: 'Fun', to: '/fun' },
-    { label: 'Lending', to: '/lending' },
-    { label: 'Register', to: '/register' },
-    { label: 'Profile', to: '/profile' },
+    { label: 'DeFi', to: '/dapp/defi' },
+    { label: 'Lending', to: '/dapp/lending' },
+    { label: 'Fun', to: '/dapp/fun' },
+    { label: 'NFT', to: '/dapp/nft' },
+    { label: 'My', to: '/dapp/my' },
 ];
 
 const MobilePageShell = ({
@@ -69,7 +68,7 @@ const MobilePageShell = ({
                     <div className="mobile-shell__hero-copy">
                         <p className="mobile-shell__eyebrow">{eyebrow}</p>
                         <h1>{title}</h1>
-                        <p className="mobile-shell__lead">{description}</p>
+                        {description ? <p className="mobile-shell__lead">{description}</p> : null}
                     </div>
 
                     {heroMedia ? <div className="mobile-shell__hero-media">{heroMedia}</div> : null}

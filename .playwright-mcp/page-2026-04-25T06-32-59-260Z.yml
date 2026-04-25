@@ -1,0 +1,160 @@
+- generic [ref=e6]:
+  - banner [ref=e7]:
+    - link "GemChain logo GEM" [ref=e8] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e9]
+      - generic [ref=e10]: GEM
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "GEMCHAIN" [level=1] [ref=e14]
+        - paragraph [ref=e15]:
+          - text: BRINGING REAL-WORLD
+          - text: GEMSTONES ON-CHAIN
+      - img "GemChain coin" [ref=e17]
+      - link "Explore the Ecosystem" [ref=e18] [cursor=pointer]:
+        - /url: /dapp
+        - generic [ref=e19]: Explore the Ecosystem
+        - img [ref=e20]
+    - generic [ref=e22]:
+      - generic [ref=e23]: — ABOUT GEMCHAIN —
+      - heading "GEMCHAIN IS A WEB3 INFRASTRUCTURE DESIGNED TO BRIDGE THE GAP BETWEEN PHYSICAL GEMSTONES AND BLOCKCHAIN TECHNOLOGY." [level=2] [ref=e24]
+      - generic [ref=e25]:
+        - paragraph [ref=e28]: GemChain enables the digital representation of every gem.
+        - paragraph [ref=e31]: GemChain enables the digital representation of every gem.
+        - paragraph [ref=e34]: GemChain enables the digital representation of every gem.
+        - paragraph [ref=e37]: GemChain enables the digital representation of every gem.
+    - generic [ref=e38]:
+      - heading "THE PAST & FUTURE OF GEMCHAIN" [level=2] [ref=e39]:
+        - text: THE PAST & FUTURE OF
+        - emphasis [ref=e40]: GEMCHAIN
+      - generic [ref=e41]:
+        - article [ref=e42]:
+          - generic [ref=e44]: Q1 2026
+          - generic [ref=e45]:
+            - img [ref=e46]
+            - generic [ref=e49]: Title
+          - paragraph [ref=e50]: The global gemstone market has long been limited by fragmented supply chains, lack of transparency, and restricted access to investment opportunities.
+        - article [ref=e51]:
+          - generic [ref=e53]: Q2 - Q3 2026
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e58]: Title
+          - paragraph [ref=e59]: TGemChain was founded to bring a new level of trust, transparency, and accessibility to this industry.
+        - article [ref=e60]:
+          - generic [ref=e62]: Q1 - Q4 2027
+          - generic [ref=e63]:
+            - img [ref=e64]
+            - generic [ref=e67]: Title
+          - paragraph [ref=e68]: Originating from Dubai — one of the world’s most important gemstone trading hubs GemChain combines decades of expertise in gemstone trading with cutting-edge blockchain technology.
+        - article [ref=e69]:
+          - generic [ref=e71]: Q1 2026
+          - generic [ref=e72]:
+            - img [ref=e73]
+            - generic [ref=e76]: Title
+          - paragraph [ref=e77]: TGemChain was founded to bring a new level of trust, transparency, and accessibility to
+    - generic [ref=e78]:
+      - heading "WHY CHOOSE GEMCHAIN" [level=2] [ref=e79]:
+        - generic [ref=e80]: WHY CHOOSE
+        - emphasis [ref=e81]: GEMCHAIN
+      - generic [ref=e82]:
+        - article [ref=e83]:
+          - generic [ref=e85]:
+            - heading "Transparent Asset Verification" [level=3] [ref=e86]
+            - paragraph [ref=e87]: Every gemstone in the ecosystem can be verified through blockchain records, ensuring authenticity and traceability.
+        - article [ref=e88]:
+          - paragraph [ref=e91]: GemChain connects physical gemstones with blockchain technology, creating a trusted digital representation of real-world assets.
+        - article [ref=e92]:
+          - generic [ref=e94]:
+            - heading "Global Digital Marketplace" [level=3] [ref=e95]
+            - paragraph [ref=e96]: Users from around the world can access gemstone-related digital assets through a decentralized ecosystem.
+    - generic [ref=e97]:
+      - heading "LATEST FROM GEMCHAIN" [level=2] [ref=e98]:
+        - text: LATEST FROM
+        - emphasis [ref=e99]: GEMCHAIN
+      - generic [ref=e100]:
+        - article [ref=e101]:
+          - img "Mining economics are facing a structural test." [ref=e102]
+          - generic [ref=e103]:
+            - heading "Mining economics are facing a structural test." [level=3] [ref=e104]
+            - paragraph [ref=e105]: According to a recent report from trading firm Wintermute, the current cycle has
+            - link "View Details" [ref=e106] [cursor=pointer]:
+              - /url: /dapp/fun
+              - generic [ref=e107]: View Details
+              - img [ref=e108]
+        - article [ref=e110]:
+          - img "Mining economics are facing a structural test." [ref=e111]
+          - generic [ref=e112]:
+            - heading "Mining economics are facing a structural test." [level=3] [ref=e113]
+            - link "View details for Mining economics are facing a structural test." [ref=e114] [cursor=pointer]:
+              - /url: /dapp/fun
+              - img [ref=e115]
+        - article [ref=e117]:
+          - img "Mining economics are facing a structural test." [ref=e118]
+          - generic [ref=e119]:
+            - heading "Mining economics are facing a structural test." [level=3] [ref=e120]
+            - link "View details for Mining economics are facing a structural test." [ref=e121] [cursor=pointer]:
+              - /url: /dapp/fun
+              - img [ref=e122]
+    - generic [ref=e124]:
+      - heading "FAQs" [level=2] [ref=e125]
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - button "WHAT IS GEMCHAIN?" [ref=e128]:
+            - generic [ref=e129]: WHAT IS GEMCHAIN?
+            - img [ref=e130]
+          - generic [ref=e131]: GemChain is a Web3 infrastructure that brings real-world gemstones on-chain through tokenization and verification.
+        - button "ARE THE GEMSTONES REAL?" [ref=e133]:
+          - generic [ref=e134]: ARE THE GEMSTONES REAL?
+          - img [ref=e135]
+        - button "HOW CAN I PARTICIPATE?" [ref=e138]:
+          - generic [ref=e139]: HOW CAN I PARTICIPATE?
+          - img [ref=e140]
+        - button "WILL THERE BE A TOKEN?" [ref=e143]:
+          - generic [ref=e144]: WILL THERE BE A TOKEN?
+          - img [ref=e145]
+      - generic [ref=e147]:
+        - paragraph [ref=e148]: HAVE ANY QUESTIONS LEFT?
+        - paragraph [ref=e149]: SEND US A MESSAGE
+        - link "Contact us" [ref=e150] [cursor=pointer]:
+          - /url: /register
+          - generic [ref=e151]: Contact us
+          - img [ref=e152]
+  - contentinfo [ref=e154]:
+    - link "GemChain logo GEM" [ref=e155] [cursor=pointer]:
+      - /url: /
+      - img "GemChain logo" [ref=e156]
+      - generic [ref=e157]: GEM
+    - paragraph [ref=e158]: By leveraging blockchain and tokenization, GemChain unlocks the digital representation of real-world gemstones, allowing users to participate in a new gemstone and global marketplace.
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - heading "Home" [level=3] [ref=e161]
+        - list [ref=e162]:
+          - listitem [ref=e163]: Blog
+          - listitem [ref=e164]: Brand
+          - listitem [ref=e165]: FAQ
+          - listitem [ref=e166]: Help & Support
+          - listitem [ref=e167]: Governance
+      - generic [ref=e168]:
+        - heading "Mall" [level=3] [ref=e169]
+        - list [ref=e170]:
+          - listitem [ref=e171]: Audit
+          - listitem [ref=e172]: Case Studies
+          - listitem [ref=e173]: Documentation
+          - listitem [ref=e174]: Technical Paper
+      - generic [ref=e175]:
+        - heading "DeFi" [level=3] [ref=e176]
+        - list [ref=e177]:
+          - listitem [ref=e178]: Build
+          - listitem [ref=e179]: Case Studies
+          - listitem [ref=e180]: Documentation
+          - listitem [ref=e181]: Technical Paper
+          - listitem [ref=e182]: Security
+      - generic [ref=e183]:
+        - heading "NFT" [level=3] [ref=e184]
+        - list [ref=e185]:
+          - listitem [ref=e186]: Terms of Service
+          - listitem [ref=e187]: Contact
+          - listitem [ref=e188]: Press
+          - listitem [ref=e189]: Manage Account
+    - paragraph [ref=e190]: © 2026 GemChain. All rights reserved. PoweredBy Lovable

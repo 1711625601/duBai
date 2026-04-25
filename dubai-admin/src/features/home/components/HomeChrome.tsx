@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 const HomeChrome = () => {
     return (
         <>
@@ -161,7 +163,13 @@ const HomeChrome = () => {
                 <p id="584_344" className="dubai-paragraph-584_344">
                     {'GemChain'}
                 </p>
-                <div id="584_410" className="dubai-group-584_410">
+                <Link
+                    id="584_410"
+                    className="dubai-group-584_410"
+                    to="/dapp"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <div id="584_411" className="dubai-group-584_411">
                         <div id="584_412" className="dubai-rectangle-584_412"></div>
                     </div>
@@ -169,7 +177,7 @@ const HomeChrome = () => {
                         {'Explore the Ecosystem'}
                     </p>
                     <div id="584_414" className="dubai-vector-584_414"></div>
-                </div>
+                </Link>
             </div>
         </>
     );
